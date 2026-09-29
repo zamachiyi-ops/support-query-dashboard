@@ -1,0 +1,29 @@
+{
+  "categories": {
+    "Order tracking & updates": ["delivery tracking query", "order update", "order confirmation query"],
+    "Complaints": ["complaint"],
+    "Refunds & payments": ["refund request", "payment query"],
+    "Vouchers & promo codes": ["invalid voucher code", "expired voucher code", "voucher query", "wicode redemption issue"],
+    "How to order": ["how to order query", "ordering assistance"],
+    "Account & login": ["account registration", "password reset", "account query", "registration query", "contact update query", "account recycled number"],
+    "General & feedback": ["compliments", "general query", "system feedback", "app feedback", "platform issue", "device issue"],
+    "Delivery address": ["delivery address query"],
+    "Store & menu info": ["store information query", "menu query"],
+    "Store/merchant queries": [
+      "livedash: refunds", "livedash: delivery zone management", "livedash: store settings",
+      "livedash: contact/access request", "livedash: reports query", "livedash: general",
+      "livedash: out of stock", "livedash: campaigns", "livedash: store information query",
+      "livedash: order history", "livedash: voucher management", "livedash: no franchisee response",
+      "livedash: cc user management", "livedash: rl user management",
+      "livedash: non self-service setting change", "livedash: yumbi platform issue",
+      "livedash: kerbside query", "live dash: compliment about yumbi", "live dash: complaint about yumbi",
+      "yumbi insights: dashboard related query", "yumbi insights: data query",
+      "yumbi insights: report navigation", "yumbi insights: access query", "yumbi insights: export data"
+    ]
+  },
+  "excluded": [
+    "chatbot", "chatbot-transfer", "dropped humanchat", "no customer response", "human interaction",
+    "referred to store", "lc agent interruption/delay", "lc service feedback", "dsg interaction",
+    "dsg incorrect escalation", "misbehaviour", "corona", "after order redemption"
+  ]
+}
