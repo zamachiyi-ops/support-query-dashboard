@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Support Query Dashboard | YUMBI</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --red: #D72E21;
+    --blue: #33A9C3;  --blue-text: #17798F;  --blue-wash: #E5F4F7;
+    --green: #82C359; --green-text: #3F7420; --green-wash: #EFF7EA;
+    --amber: #FDB533; --amber-text: #9A6100; --amber-wash: #FFF6E5;
+    --ink: #282828; --body: #6C6C6C; --line: #ECECEC; --band: #F7F7F7; --dark: #151416;
+    --shadow: 0 3px 15px rgba(0,0,0,0.08);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--band); color: var(--body);
+    font-family: "Open Sans", "Segoe UI", Arial, sans-serif; font-size: 15px; line-height: 1.5;
+  }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 32px 24px 48px; }
+  h1, h2, h3 { color: var(--ink); margin: 0; font-weight: 700; }
+  h1 { font-size: clamp(26px, 3vw, 34px); line-height: 1.318; }
+  h2 { font-size: 20px; line-height: 1.35; }
+  h3 { font-size: 16px; line-height: 1.35; }
+  button, input { font: inherit; }
+  :focus-visible { outline: 3px solid var(--blue-text); outline-offset: 2px; }
+
+  /* Header */
+  .top { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px; flex-wrap: wrap; margin-bottom: 24px; }
+  .brand { display: flex; gap: 20px; align-items: center; }
+  .logo-slot {
+    width: 88px; height: 44px; border: 1.5px dashed #D1D1D1; border-radius: 10px;
+    display: grid; place-items: center; font-size: 11px; font-weight: 700; color: var(--body); text-align: center;
+  }
+  .lede { margin: 4px 0 0; font-size: 16px; }
+  .top-actions { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .sync { font-size: 13px; font-weight: 600; padding: 6px 14px; border-radius: 17px; background: var(--green-wash); color: var(--green-text); }
+  .sync.stale { background: var(--amber-wash); color: var(--amber-text); }
+  .btn-primary {
+    height: 50px; padding: 0 28px; border: 0; border-radius: 25px; background: var(--red); color: #fff;
+    font-size: 14px; font-weight: 700; cursor: pointer;
+  }
+  .btn-primary:disabled { opacity: .5; cursor: default; }
+
+  /* Cards */
+  .card { background: #fff; border-radius: 20px; box-shadow: var(--shadow); padding: 20px 24px; }
+  .panel { border-radius: 30px; padding: 28px 32px; }
+  .micro { font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--body); }
+  .support { font-size: 13px; margin: 2px 0 16px; }
+
+  /* Controls */
+  .controls { display: flex; justify-content: space-between; gap: 20px 32px; flex-wrap: wrap; margin-bottom: 16px; }
+  .control-group { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .pills { display: flex; gap: 6px; flex-wrap: wrap; }
+  .pills button {
+    border: 1px solid #D1D1D1; background: #fff; color: var(--ink); border-radius: 17px;
+    padding: 6px 14px; font-size: 13px; font-weight: 600; cursor: pointer;
+  }
+  .pills button[aria-pressed="true"] { background: var(--ink); border-color: var(--ink); color: #fff; }
+  .pills button:disabled { color: var(--body); background: var(--band); border-style: dashed; cursor: default; }
+  .pills .dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; vertical-align: 1px; }
+  .custom { display: flex; gap: 10px; flex-wrap: wrap; }
+  .custom[hidden] { display: none; }
+  .custom label { font-size: 13px; display: flex; gap: 6px; align-items: center; }
+  .custom input { border: 1px solid #D1D1D1; border-radius: 10px; padding: 4px 8px; color: var(--ink); }
+
+  /* Volume mix */
+  .mix { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; margin-bottom: 8px; }
+  .mix-bar { flex: 1 1 280px; height: 12px; border-radius: 6px; background: var(--line); display: flex; overflow: hidden; }
+  .mix-bar span { height: 100%; }
+  .legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: 13px; }
+  .legend .dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 6px; }
+  .legend .muted { color: var(--body); opacity: .7; }
+  .period { font-size: 13px; margin: 0 0 20px 4px; }
+
+  /* Main grid */
+  .grid { display: grid; grid-template-columns: minmax(0, 2fr) minmax(260px, 1fr); gap: 20px; margin-bottom: 20px; align-items: start; }
+  .panel-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+  .ranking { list-style: none; margin: 0; padding: 0; }
+  .ranking li {
+    display: grid; grid-template-columns: 24px minmax(150px, 1.2fr) minmax(80px, 2fr) 64px 72px;
+    gap: 14px; align-items: center; padding: 11px 0; border-bottom: 1px solid var(--line);
+  }
+  .ranking li:last-child { border-bottom: 0; }
+  .rank { font-size: 13px; color: var(--body); }
+  .cat { color: var(--ink); font-weight: 600; }
+  .bar { height: 14px; border-radius: 7px; background: var(--band); display: flex; overflow: hidden; }
+  .bar span { height: 100%; }
+  .count { color: var(--ink); font-weight: 700; text-align: right; }
+  .change { font-size: 13px; text-align: right; white-space: nowrap; }
+  .empty { padding: 20px 0; }
+
+  .side { display: grid; gap: 20px; }
+  .rising { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+  .rising li {
+    background: var(--amber-wash); border-radius: 12px; padding: 10px 14px;
+    display: flex; justify-content: space-between; gap: 10px; color: var(--ink); font-weight: 600; font-size: 14px;
+  }
+  .rising .up { color: var(--amber-text); font-weight: 700; white-space: nowrap; }
+  .privacy { background: var(--dark); color: #D9D9D9; border-radius: 20px; padding: 22px 24px; font-size: 13px; }
+  .privacy h3 { color: #fff; margin-bottom: 8px; }
+  .privacy p { margin: 0; }
+
+  /* By channel */
+  .channels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; margin-top: 16px; }
+  .channel h3 { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .channel h3 .dot { width: 10px; height: 10px; border-radius: 50%; }
+  .channel ul { list-style: none; margin: 0; padding: 0; }
+  .channel li { display: flex; justify-content: space-between; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--line); color: var(--ink); font-size: 14px; }
+  .channel li:last-child { border-bottom: 0; }
+  .chip { font-size: 12px; font-weight: 700; padding: 2px 10px; border-radius: 17px; }
+  .not-connected { font-size: 13px; background: var(--band); border-radius: 12px; padding: 14px; }
+
+  footer { margin-top: 24px; font-size: 13px; }
+  footer p { margin: 2px 0; }
+  .error { background: #FDF3F2; border: 1px solid #F5CBC8; color: var(--ink); border-radius: 20px; padding: 20px 24px; margin-bottom: 20px; }
+
+  @media (max-width: 900px) {
+    .grid { grid-template-columns: 1fr; }
+    .channels { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 600px) {
+    .wrap { padding: 20px 14px 36px; }
+    .panel { padding: 22px 18px; border-radius: 20px; }
+    .ranking li { grid-template-columns: 20px minmax(0, 1fr) 56px 64px; }
+    .ranking .bar { grid-column: 2 / -1; grid-row: 2; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <div class="logo-slot" role="img" aria-label="YUMBI logo placeholder">YUMBI<br>logo</div>
+      <div>
+        <h1>Support Query Dashboard</h1>
+        <p class="lede">What customers are asking about, across every support channel.</p>
+      </div>
+    </div>
+    <div class="top-actions">
+      <span id="sync" class="sync">Loading data</span>
+      <button id="export" class="btn-primary" type="button" disabled>Download CSV</button>
+    </div>
+  </header>
+
+  <div id="error" class="error" hidden></div>
+
+  <section class="card controls" aria-label="Filters">
+    <div class="control-group">
+      <span class="micro">Date range</span>
+      <div class="pills" id="range-pills">
+        <button type="button" data-range="today" aria-pressed="false">Today</button>
+        <button type="button" data-range="7" aria-pressed="false">7 days</button>
+        <button type="button" data-range="30" aria-pressed="true">30 days</button>
+        <button type="button" data-range="custom" aria-pressed="false">Custom</button>
+      </div>
+      <div class="custom" id="custom" hidden>
+        <label>From <input type="date" id="from"></label>
+        <label>To <input type="date" id="to"></label>
+      </div>
+    </div>
+    <div class="control-group">
+      <span class="micro">Channel</span>
+      <div class="pills" id="channel-pills"></div>
+    </div>
+  </section>
+
+  <section class="card mix" aria-label="Volume mix">
+    <span class="micro">Volume mix</span>
+    <div class="mix-bar" id="mix-bar"></div>
+    <div class="legend" id="mix-legend"></div>
+  </section>
+  <p class="period" id="period"></p>
+
+  <div class="grid">
+    <section class="card panel" aria-labelledby="freq-h">
+      <div class="panel-head">
+        <h2 id="freq-h">Most frequent queries</h2>
+        <div class="legend" id="freq-legend"></div>
+      </div>
+      <ol class="ranking" id="ranking"></ol>
+    </section>
+
+    <div class="side">
+      <section class="card" aria-labelledby="rising-h">
+        <h3 id="rising-h">Rising this period</h3>
+        <p class="support" id="rising-sub">Biggest movers vs the previous period</p>
+        <ul class="rising" id="rising"></ul>
+      </section>
+      <section class="privacy" aria-labelledby="privacy-h">
+        <h3 id="privacy-h">On data privacy</h3>
+        <p>This dashboard only ever shows query categories and counts. No customer names, phone numbers, emails or order details are imported from Zoho Desk, LiveChat or the call log, only the category each contact was tagged with.</p>
+      </section>
+    </div>
+  </div>
+
+  <section class="card panel" aria-labelledby="channel-h">
+    <h2 id="channel-h">Top queries by channel</h2>
+    <div class="channels" id="by-channel"></div>
+  </section>
+
+  <footer>
+    <p>Zoho Desk counts come from ticket categories.</p>
+    <p>LiveChat counts come from chat topic tags.</p>
+    <p>Call log counts come from call reason codes.</p>
+    <p id="measure-notes"></p>
+    <p>© YUMBI 2026</p>
+  </footer>
+</div>
+
+<script>
+const SOURCES = [
+  { id: 'zoho',     name: 'Zoho Desk', file: 'data/zoho.json',     color: 'var(--blue)',  text: 'var(--blue-text)',  wash: 'var(--blue-wash)' },
+  { id: 'livechat', name: 'LiveChat',  file: 'data/livechat.json', color: 'var(--green)', text: 'var(--green-text)', wash: 'var(--green-wash)' },
+  { id: 'calllog',  name: 'Call log',  file: 'data/call-log.json', color: 'var(--amber)', text: 'var(--amber-text)', wash: 'var(--amber-wash)' }
+];
+const REFRESH_MINUTES = 10;
+const RISING_MIN_PREVIOUS = 10; // ignore tiny categories when working out "rising"
+
+const state = { range: '30', channel: 'all', from: null, to: null };
+let loaded = {};
+let bounds = { earliest: null, latest: null };
+let lastExport = null;
+
+const $ = id => document.getElementById(id);
+const fmt = n => n.toLocaleString('en-GB');
+
+// Date helpers work on YYYY-MM-DD strings
+function addDays(day, n) {
+  const d = new Date(day + 'T00:00:00Z');
+  d.setUTCDate(d.getUTCDate() + n);
+  return d.toISOString().slice(0, 10);
+}
+function daysBetween(a, b) {
+  return Math.round((new Date(b + 'T00:00:00Z') - new Date(a + 'T00:00:00Z')) / 86400000) + 1;
+}
+function niceDate(day) {
+  return new Date(day + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
+}
+function el(tag, props = {}, children = []) {
+  const node = document.createElement(tag);
+  Object.entries(props).forEach(([k, v]) => {
+    if (k === 'style') node.style.cssText = v;
+    else if (k === 'text') node.textContent = v;
+    else node.setAttribute(k, v);
+  });
+  children.forEach(c => node.append(c));
+  return node;
+}
+
+async function loadAll() {
+  const results = await Promise.all(SOURCES.map(async s => {
+    try {
+      const res = await fetch(s.file + '?t=' + Date.now(), { cache: 'no-store' });
+      if (!res.ok) return [s.id, null];
+      const data = await res.json();
+      return [s.id, data && data.daily ? data : null];
+    } catch (e) { return [s.id, null]; }
+  }));
+  loaded = Object.fromEntries(results);
+  const connected = SOURCES.filter(s => loaded[s.id]);
+
+  if (!connected.length) {
+    $('error').hidden = false;
+    $('error').textContent = "The dashboard couldn't find any data files. Check that data/livechat.json exists in the repo, and open this page from its GitHub Pages address rather than as a downloaded file.";
+    $('sync').textContent = 'No data';
+    $('sync').classList.add('stale');
+    return;
+  }
+  $('error').hidden = true;
+
+  const days = connected.flatMap(s => Object.keys(loaded[s.id].daily)).sort();
+  bounds = { earliest: days[0], latest: days[days.length - 1] };
+  ['from', 'to'].forEach(id => { $(id).min = bounds.earliest; $(id).max = bounds.latest; });
+  if (!state.from) { state.from = addDays(bounds.latest, -29); state.to = bounds.latest; $('from').value = state.from; $('to').value = state.to; }
+
+  if (state.channel !== 'all' && !loaded[state.channel]) state.channel = 'all';
+  renderChannelPills();
+  updateSync();
+  render();
+}
+
+function getPeriod() {
+  let from, to = bounds.latest;
+  if (state.range === 'today') from = to;
+  else if (state.range === '7') from = addDays(to, -6);
+  else if (state.range === '30') from = addDays(to, -29);
+  else {
+    from = state.from || bounds.earliest; to = state.to || bounds.latest;
+    if (from > to) [from, to] = [to, from];
+  }
+  const len = daysBetween(from, to);
+  const prevTo = addDays(from, -1), prevFrom = addDays(from, -len);
+  return { from, to, prevFrom, prevTo, hasPrev: prevFrom >= bounds.earliest };
+}
+
+function sumSource(id, from, to) {
+  const data = loaded[id]; const totals = {};
+  if (!data) return totals;
+  for (const [day, counts] of Object.entries(data.daily)) {
+    if (day < from || day > to) continue;
+    for (const [cat, n] of Object.entries(counts)) totals[cat] = (totals[cat] || 0) + (Number(n) || 0);
+  }
+  return totals;
+}
+
+function allCategories() {
+  const cats = [];
+  SOURCES.forEach(s => (loaded[s.id]?.categories || []).forEach(c => { if (!cats.includes(c)) cats.push(c); }));
+  return cats;
+}
+
+function renderChannelPills() {
+  const box = $('channel-pills'); box.innerHTML = '';
+  const make = (value, label, source) => {
+    const btn = el('button', { type: 'button', 'aria-pressed': String(state.channel === value) });
+    if (source) btn.append(el('span', { class: 'dot', style: `background:${source.color}` }));
+    btn.append(label);
+    if (source && !loaded[source.id]) { btn.disabled = true; btn.title = 'Not connected yet'; }
+    btn.addEventListener('click', () => { state.channel = value; renderChannelPills(); render(); });
+    box.append(btn);
+  };
+  make('all', 'All channels');
+  SOURCES.forEach(s => make(s.id, s.name, s));
+}
+
+function changeText(cur, prev, hasPrev) {
+  if (!hasPrev) return { text: 'no history', label: 'No earlier data to compare' };
+  if (prev === 0) return cur > 0 ? { text: 'new', label: 'None in the previous period' } : { text: 'flat', label: 'No change' };
+  const pct = Math.round((cur - prev) / prev * 100);
+  if (pct === 0) return { text: 'flat', label: 'No change' };
+  return pct > 0
+    ? { text: `▲ +${pct}%`, label: `Up ${pct}% on the previous period` }
+    : { text: `▼ ${pct}%`, label: `Down ${Math.abs(pct)}% on the previous period` };
+}
+
+function render() {
+  const p = getPeriod();
+  const active = SOURCES.filter(s => loaded[s.id] && (state.channel === 'all' || state.channel === s.id));
+  const cats = allCategories();
+  const cur = {}, prev = {};
+  SOURCES.forEach(s => { cur[s.id] = sumSource(s.id, p.from, p.to); prev[s.id] = sumSource(s.id, p.prevFrom, p.prevTo); });
+
+  // Period line
+  const range = p.from === p.to ? niceDate(p.from) : `${niceDate(p.from)} – ${niceDate(p.to)}`;
+  const compare = p.hasPrev ? `, compared with ${p.prevFrom === p.prevTo ? niceDate(p.prevFrom) : niceDate(p.prevFrom) + ' – ' + niceDate(p.prevTo)}` : '';
+  $('period').textContent = `Showing ${range}${compare}`;
+
+  // Volume mix (always all channels)
+  const channelTotals = SOURCES.map(s => ({ s, n: Object.values(cur[s.id]).reduce((a, b) => a + b, 0) }));
+  const grand = channelTotals.reduce((a, c) => a + c.n, 0);
+  $('mix-bar').innerHTML = ''; $('mix-legend').innerHTML = '';
+  channelTotals.forEach(({ s, n }) => {
+    if (grand && n) $('mix-bar').append(el('span', { style: `width:${n / grand * 100}%;background:${s.color}`, title: `${s.name}: ${fmt(n)}` }));
+    const label = loaded[s.id] ? `${s.name} ${grand ? Math.round(n / grand * 100) : 0}%` : `${s.name}: not connected yet`;
+    $('mix-legend').append(el('span', loaded[s.id] ? {} : { class: 'muted' }, [el('span', { class: 'dot', style: `background:${s.color}` }), label]));
+  });
+
+  // Legend for the ranking
+  $('freq-legend').innerHTML = '';
+  active.forEach(s => $('freq-legend').append(el('span', {}, [el('span', { class: 'dot', style: `background:${s.color}` }), s.name])));
+
+  // Ranking
+  const rows = cats.map(cat => {
+    const parts = active.map(s => ({ s, n: cur[s.id][cat] || 0 }));
+    const total = parts.reduce((a, b) => a + b.n, 0);
+    const before = active.reduce((a, s) => a + (prev[s.id][cat] || 0), 0);
+    return { cat, parts, total, before };
+  }).filter(r => r.total > 0).sort((a, b) => b.total - a.total);
+
+  const list = $('ranking'); list.innerHTML = '';
+  if (!rows.length) list.append(el('li', { class: 'empty', text: 'No tagged queries in this period.' }));
+  const max = rows[0]?.total || 1;
+  rows.forEach((r, i) => {
+    const bar = el('div', { class: 'bar', role: 'img', 'aria-label': r.parts.map(x => `${x.s.name} ${x.n}`).join(', ') });
+    r.parts.forEach(x => { if (x.n) bar.append(el('span', { style: `width:${x.n / max * 100}%;background:${x.s.color}`, title: `${x.s.name}: ${fmt(x.n)}` })); });
+    const ch = changeText(r.total, r.before, p.hasPrev);
+    list.append(el('li', {}, [
+      el('span', { class: 'rank', text: String(i + 1) }),
+      el('span', { class: 'cat', text: r.cat }),
+      bar,
+      el('span', { class: 'count', text: fmt(r.total) }),
+      el('span', { class: 'change', text: ch.text, title: ch.label, 'aria-label': ch.label })
+    ]));
+  });
+
+  // Rising
+  const rising = $('rising'); rising.innerHTML = '';
+  if (!p.hasPrev) {
+    rising.append(el('li', { text: 'Not enough history to compare yet.' }));
+  } else {
+    const movers = rows.filter(r => r.before >= RISING_MIN_PREVIOUS && r.total > r.before)
+      .map(r => ({ cat: r.cat, pct: Math.round((r.total - r.before) / r.before * 100) }))
+      .filter(m => m.pct > 0).sort((a, b) => b.pct - a.pct).slice(0, 3);
+    if (!movers.length) rising.append(el('li', { text: 'No categories rose this period.' }));
+    movers.forEach(m => rising.append(el('li', {}, [el('span', { text: m.cat }), el('span', { class: 'up', text: `▲ +${m.pct}%` })])));
+  }
+
+  // By channel
+  const byChannel = $('by-channel'); byChannel.innerHTML = '';
+  SOURCES.forEach(s => {
+    const col = el('div', { class: 'channel' }, [el('h3', {}, [el('span', { class: 'dot', style: `background:${s.color}` }), s.name])]);
+    if (!loaded[s.id]) {
+      col.append(el('p', { class: 'not-connected', text: 'Not connected yet.' }));
+    } else {
+      const top = Object.entries(cur[s.id]).filter(([, n]) => n > 0).sort((a, b) => b[1] - a[1]).slice(0, 4);
+      const ul = el('ul');
+      if (!top.length) ul.append(el('li', { text: 'No tagged queries in this period.' }));
+      top.forEach(([cat, n]) => ul.append(el('li', {}, [el('span', { text: cat }), el('span', { class: 'chip', style: `background:${s.wash};color:${s.text}`, text: fmt(n) })])));
+      col.append(ul);
+    }
+    byChannel.append(col);
+  });
+
+  // Notes on how each source counts
+  $('measure-notes').textContent = SOURCES.filter(s => loaded[s.id]?.measure).map(s => `${s.name} figures are ${loaded[s.id].measure.charAt(0).toLowerCase()}${loaded[s.id].measure.slice(1)}.`).join(' ');
+
+  // Keep what's on screen ready for export
+  lastExport = { p, active, rows, cur };
+  $('export').disabled = !rows.length;
+}
+
+function updateSync() {
+  const times = SOURCES.map(s => loaded[s.id]?.last_synced).filter(Boolean).map(t => new Date(t));
+  if (!times.length) return;
+  const newest = new Date(Math.max(...times));
+  const mins = Math.max(0, Math.round((Date.now() - newest) / 60000));
+  const ago = mins < 1 ? 'just now' : mins < 60 ? `${mins} min ago` : mins < 1440 ? `${Math.round(mins / 60)} hr ago` : `${Math.round(mins / 1440)} days ago`;
+  $('sync').textContent = `Updated ${ago}`;
+  $('sync').classList.toggle('stale', mins > 90);
+  $('sync').title = newest.toLocaleString('en-GB');
+}
+
+function exportCsv() {
+  if (!lastExport) return;
+  const { p, active, rows, cur } = lastExport;
+  const q = v => `"${String(v).replace(/"/g, '""')}"`;
+  const header = ['Category', ...active.map(s => s.name), 'Total', 'Previous period', 'Change'];
+  const lines = [header.map(q).join(',')];
+  rows.forEach(r => {
+    const change = p.hasPrev && r.before ? Math.round((r.total - r.before) / r.before * 100) + '%' : '';
+    lines.push([r.cat, ...active.map(s => cur[s.id][r.cat] || 0), r.total, p.hasPrev ? r.before : '', change].map(q).join(','));
+  });
+  const blob = new Blob([lines.join('\n')], { type: 'text/csv' });
+  const a = el('a', { href: URL.createObjectURL(blob), download: `support-queries_${p.from}_to_${p.to}.csv` });
+  document.body.append(a); a.click(); a.remove();
+}
+
+// Wire up controls
+$('range-pills').querySelectorAll('button').forEach(btn => btn.addEventListener('click', () => {
+  state.range = btn.dataset.range;
+  $('range-pills').querySelectorAll('button').forEach(b => b.setAttribute('aria-pressed', String(b === btn)));
+  $('custom').hidden = state.range !== 'custom';
+  render();
+}));
+['from', 'to'].forEach(id => $(id).addEventListener('change', e => { state[id] = e.target.value; render(); }));
+$('export').addEventListener('click', exportCsv);
+
+loadAll();
+setInterval(loadAll, REFRESH_MINUTES * 60000);
+setInterval(updateSync, 60000);
+</script>
+</body>
+</html>
