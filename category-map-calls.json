@@ -1,0 +1,23 @@
+{
+  "categories": {
+    "POS": ["POS"],
+    "Dashboard": ["Dashboard"],
+    "Outlet Settings": ["Outlet Settings"],
+    "Menu": ["Menu"],
+    "Orders": ["Orders"],
+    "Payswitch Queries": ["Payswitch Queries"],
+    "Non-Payswitch Queries": ["None Payswitch Queries"],
+    "Delivery Provider": ["Delivery Provider"],
+    "EVouchers": ["EVouchers"],
+    "Printer": ["Printer"],
+    "Switchboard": ["Switchboard"],
+    "VoIP": ["VoIP"],
+    "Reports": ["Reports"],
+    "Accounts": ["Accounts"],
+    "Sales Query": ["Sales Query"],
+    "System issue": ["System issue"],
+    "Feedback About YUMBI": ["Feedback About YUMBI"]
+  },
+  "excluded": ["Call For YUMBI Employee"],
+  "no_subquery": ["Call For YUMBI Employee", "System issue"]
+}
