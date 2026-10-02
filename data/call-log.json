@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-02T16:28:24.679Z",
+  "last_synced": "2026-10-02T16:54:42.694Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-04",
@@ -1150,7 +1150,7 @@
     },
     "2026-10-02": {
       "POS": 0,
-      "Dashboard": 2,
+      "Dashboard": 3,
       "Outlet Settings": 1,
       "Menu": 0,
       "Orders": 4,
@@ -1782,6 +1782,7 @@
     },
     "2026-10-02": {
       "Dashboard | Access request": 2,
+      "Dashboard | Order History/Refunds": 1,
       "EVouchers | Redemption query": 2,
       "Orders | Order Details Confirmation": 4,
       "Outlet Settings | Store ID Query": 1,
