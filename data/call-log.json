@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-02T12:33:27.084Z",
+  "last_synced": "2026-10-02T12:57:35.943Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-04",
@@ -1154,7 +1154,7 @@
       "Outlet Settings": 1,
       "Menu": 0,
       "Orders": 4,
-      "Payswitch Queries": 0,
+      "Payswitch Queries": 1,
       "Non-Payswitch Queries": 0,
       "Delivery Provider": 0,
       "EVouchers": 2,
@@ -1785,6 +1785,7 @@
       "EVouchers | Redemption query": 2,
       "Orders | Order Details Confirmation": 4,
       "Outlet Settings | Store ID Query": 1,
+      "Payswitch Queries | Failed Order Refund Query": 1,
       "Switchboard | Softphone Link": 1
     }
   },
