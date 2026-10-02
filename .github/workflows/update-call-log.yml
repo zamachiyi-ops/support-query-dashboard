@@ -1,0 +1,37 @@
+name: Update call log data
+
+on:
+  schedule:
+    - cron: '15,45 * * * *'   # every 30 minutes, offset from the LiveChat update
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+
+      - name: Fetch call log totals
+        env:
+          CALL_LOG_CSV_URL: ${{ secrets.CALL_LOG_CSV_URL }}
+        run: node scripts/fetch-call-log.js
+
+      - name: Save updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/call-log.json
+          git diff --staged --quiet || git commit -m "Update call log data"
+          git pull --rebase
+          git push
