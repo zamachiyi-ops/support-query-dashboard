@@ -1,11 +1,11 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-02T21:52:54.958Z",
+  "last_synced": "2026-10-02T22:25:43.985Z",
   "timezone": "Africa/Johannesburg",
   "range": {
-    "from": "2026-08-04",
-    "to": "2026-10-02"
+    "from": "2026-08-05",
+    "to": "2026-10-03"
   },
   "categories": [
     "POS",
@@ -27,25 +27,6 @@
     "Feedback About YUMBI"
   ],
   "daily": {
-    "2026-08-04": {
-      "POS": 2,
-      "Dashboard": 5,
-      "Outlet Settings": 6,
-      "Menu": 0,
-      "Orders": 0,
-      "Payswitch Queries": 3,
-      "Non-Payswitch Queries": 0,
-      "Delivery Provider": 0,
-      "EVouchers": 5,
-      "Printer": 1,
-      "Switchboard": 0,
-      "VoIP": 2,
-      "Reports": 1,
-      "Accounts": 1,
-      "Sales Query": 0,
-      "System issue": 0,
-      "Feedback About YUMBI": 0
-    },
     "2026-08-05": {
       "POS": 4,
       "Dashboard": 5,
@@ -1166,25 +1147,28 @@
       "Sales Query": 0,
       "System issue": 0,
       "Feedback About YUMBI": 0
+    },
+    "2026-10-03": {
+      "POS": 0,
+      "Dashboard": 0,
+      "Outlet Settings": 0,
+      "Menu": 0,
+      "Orders": 0,
+      "Payswitch Queries": 0,
+      "Non-Payswitch Queries": 0,
+      "Delivery Provider": 0,
+      "EVouchers": 0,
+      "Printer": 0,
+      "Switchboard": 0,
+      "VoIP": 0,
+      "Reports": 0,
+      "Accounts": 0,
+      "Sales Query": 0,
+      "System issue": 0,
+      "Feedback About YUMBI": 0
     }
   },
   "subquery_daily": {
-    "2026-08-04": {
-      "Accounts | Documentation": 1,
-      "Dashboard | Access request": 3,
-      "Dashboard | Order History/Refunds": 1,
-      "Dashboard | User Management": 1,
-      "EVouchers | Redemption query": 1,
-      "EVouchers | Voucher information": 2,
-      "EVouchers | Wigroup code": 2,
-      "Outlet Settings | Delivery zones settings update": 5,
-      "Outlet Settings | Trading times update": 1,
-      "POS | How to Capture Order": 2,
-      "Payswitch Queries | Failed Order Refund Query": 3,
-      "Printer | Query on how the printer works": 1,
-      "Reports | Data query": 1,
-      "VoIP | General Query": 2
-    },
     "2026-08-05": {
       "Accounts | Documentation": 3,
       "Dashboard | Access request": 1,
