@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-03T09:52:46.672Z",
+  "last_synced": "2026-10-03T10:24:58.127Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-05",
@@ -1158,7 +1158,7 @@
       "Non-Payswitch Queries": 0,
       "Delivery Provider": 0,
       "EVouchers": 0,
-      "Printer": 0,
+      "Printer": 1,
       "Switchboard": 0,
       "VoIP": 0,
       "Reports": 0,
@@ -1776,7 +1776,8 @@
       "Switchboard | Softphone Link": 1
     },
     "2026-10-03": {
-      "POS | How to Capture Order": 1
+      "POS | How to Capture Order": 1,
+      "Printer | Printer troubleshooting": 1
     }
   },
   "unmapped_queries": {}
