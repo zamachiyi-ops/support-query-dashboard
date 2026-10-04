@@ -1,11 +1,11 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-03T18:38:59.892Z",
+  "last_synced": "2026-10-04T02:16:11.157Z",
   "timezone": "Africa/Johannesburg",
   "range": {
-    "from": "2026-08-05",
-    "to": "2026-10-03"
+    "from": "2026-08-06",
+    "to": "2026-10-04"
   },
   "categories": [
     "POS",
@@ -27,25 +27,6 @@
     "Feedback About YUMBI"
   ],
   "daily": {
-    "2026-08-05": {
-      "POS": 4,
-      "Dashboard": 5,
-      "Outlet Settings": 2,
-      "Menu": 0,
-      "Orders": 1,
-      "Payswitch Queries": 0,
-      "Non-Payswitch Queries": 1,
-      "Delivery Provider": 1,
-      "EVouchers": 1,
-      "Printer": 3,
-      "Switchboard": 1,
-      "VoIP": 1,
-      "Reports": 0,
-      "Accounts": 3,
-      "Sales Query": 0,
-      "System issue": 0,
-      "Feedback About YUMBI": 0
-    },
     "2026-08-06": {
       "POS": 2,
       "Dashboard": 4,
@@ -1166,26 +1147,28 @@
       "Sales Query": 0,
       "System issue": 0,
       "Feedback About YUMBI": 0
+    },
+    "2026-10-04": {
+      "POS": 0,
+      "Dashboard": 0,
+      "Outlet Settings": 0,
+      "Menu": 0,
+      "Orders": 0,
+      "Payswitch Queries": 0,
+      "Non-Payswitch Queries": 0,
+      "Delivery Provider": 0,
+      "EVouchers": 0,
+      "Printer": 0,
+      "Switchboard": 0,
+      "VoIP": 0,
+      "Reports": 0,
+      "Accounts": 0,
+      "Sales Query": 0,
+      "System issue": 0,
+      "Feedback About YUMBI": 0
     }
   },
   "subquery_daily": {
-    "2026-08-05": {
-      "Accounts | Documentation": 3,
-      "Dashboard | Access request": 1,
-      "Dashboard | Campaign Related Query": 2,
-      "Dashboard | Store Settings": 2,
-      "Delivery Provider | Delivery Tribe": 1,
-      "EVouchers | Wigroup code": 1,
-      "Non-Payswitch Queries | Payfast:Store Payout Query": 1,
-      "Orders | Order Details Confirmation": 1,
-      "Outlet Settings | Delivery zones settings update": 2,
-      "POS | General": 2,
-      "POS | POS report": 2,
-      "Printer | Printer troubleshooting": 2,
-      "Printer | Replacement Request": 1,
-      "Switchboard | On-Boarding Follow Up": 1,
-      "VoIP | General Query": 1
-    },
     "2026-08-06": {
       "Dashboard | Access request": 2,
       "Dashboard | Campaign Related Query": 1,
