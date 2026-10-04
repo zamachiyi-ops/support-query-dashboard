@@ -1,11 +1,11 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-04T21:56:28.792Z",
+  "last_synced": "2026-10-04T22:26:13.183Z",
   "timezone": "Africa/Johannesburg",
   "range": {
-    "from": "2026-08-06",
-    "to": "2026-10-04"
+    "from": "2026-08-07",
+    "to": "2026-10-05"
   },
   "categories": [
     "POS",
@@ -27,25 +27,6 @@
     "Feedback About YUMBI"
   ],
   "daily": {
-    "2026-08-06": {
-      "POS": 2,
-      "Dashboard": 4,
-      "Outlet Settings": 2,
-      "Menu": 0,
-      "Orders": 2,
-      "Payswitch Queries": 6,
-      "Non-Payswitch Queries": 0,
-      "Delivery Provider": 0,
-      "EVouchers": 3,
-      "Printer": 2,
-      "Switchboard": 1,
-      "VoIP": 0,
-      "Reports": 1,
-      "Accounts": 0,
-      "Sales Query": 0,
-      "System issue": 0,
-      "Feedback About YUMBI": 0
-    },
     "2026-08-07": {
       "POS": 1,
       "Dashboard": 2,
@@ -1166,24 +1147,28 @@
       "Sales Query": 0,
       "System issue": 0,
       "Feedback About YUMBI": 0
+    },
+    "2026-10-05": {
+      "POS": 0,
+      "Dashboard": 0,
+      "Outlet Settings": 0,
+      "Menu": 0,
+      "Orders": 0,
+      "Payswitch Queries": 0,
+      "Non-Payswitch Queries": 0,
+      "Delivery Provider": 0,
+      "EVouchers": 0,
+      "Printer": 0,
+      "Switchboard": 0,
+      "VoIP": 0,
+      "Reports": 0,
+      "Accounts": 0,
+      "Sales Query": 0,
+      "System issue": 0,
+      "Feedback About YUMBI": 0
     }
   },
   "subquery_daily": {
-    "2026-08-06": {
-      "Dashboard | Access request": 2,
-      "Dashboard | Campaign Related Query": 1,
-      "Dashboard | Store Settings": 1,
-      "EVouchers | Redemption query": 1,
-      "EVouchers | Wigroup code": 2,
-      "Orders | Order Details Confirmation": 2,
-      "Outlet Settings | Delivery zones settings update": 2,
-      "POS | How to Capture Order": 2,
-      "Payswitch Queries | Failed Order Refund Query": 6,
-      "Printer | Printer troubleshooting": 1,
-      "Printer | RAM Collection/Delivery Query": 1,
-      "Reports | Data query": 1,
-      "Switchboard | Training Request": 1
-    },
     "2026-08-07": {
       "Dashboard | Access request": 1,
       "Dashboard | Order History/Refunds": 1,
