@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-05T07:03:38.888Z",
+  "last_synced": "2026-10-05T07:31:16.441Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-07",
@@ -1159,7 +1159,7 @@
       "Delivery Provider": 0,
       "EVouchers": 0,
       "Printer": 0,
-      "Switchboard": 0,
+      "Switchboard": 1,
       "VoIP": 0,
       "Reports": 0,
       "Accounts": 0,
@@ -1753,6 +1753,9 @@
       "Menu | Item Removal": 1,
       "Menu | Out of Stock": 1,
       "Orders | Order Details Confirmation": 1
+    },
+    "2026-10-05": {
+      "Switchboard | On boarding": 1
     }
   },
   "unmapped_queries": {}
