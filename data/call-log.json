@@ -1,11 +1,11 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-05T21:54:45.471Z",
+  "last_synced": "2026-10-05T22:25:59.447Z",
   "timezone": "Africa/Johannesburg",
   "range": {
-    "from": "2026-08-07",
-    "to": "2026-10-05"
+    "from": "2026-08-08",
+    "to": "2026-10-06"
   },
   "categories": [
     "POS",
@@ -27,25 +27,6 @@
     "Feedback About YUMBI"
   ],
   "daily": {
-    "2026-08-07": {
-      "POS": 1,
-      "Dashboard": 2,
-      "Outlet Settings": 0,
-      "Menu": 0,
-      "Orders": 0,
-      "Payswitch Queries": 3,
-      "Non-Payswitch Queries": 0,
-      "Delivery Provider": 0,
-      "EVouchers": 1,
-      "Printer": 2,
-      "Switchboard": 0,
-      "VoIP": 2,
-      "Reports": 0,
-      "Accounts": 0,
-      "Sales Query": 0,
-      "System issue": 0,
-      "Feedback About YUMBI": 0
-    },
     "2026-08-08": {
       "POS": 0,
       "Dashboard": 0,
@@ -1166,19 +1147,28 @@
       "Sales Query": 0,
       "System issue": 0,
       "Feedback About YUMBI": 0
+    },
+    "2026-10-06": {
+      "POS": 0,
+      "Dashboard": 0,
+      "Outlet Settings": 0,
+      "Menu": 0,
+      "Orders": 0,
+      "Payswitch Queries": 0,
+      "Non-Payswitch Queries": 0,
+      "Delivery Provider": 0,
+      "EVouchers": 0,
+      "Printer": 0,
+      "Switchboard": 0,
+      "VoIP": 0,
+      "Reports": 0,
+      "Accounts": 0,
+      "Sales Query": 0,
+      "System issue": 0,
+      "Feedback About YUMBI": 0
     }
   },
   "subquery_daily": {
-    "2026-08-07": {
-      "Dashboard | Access request": 1,
-      "Dashboard | Order History/Refunds": 1,
-      "EVouchers | Redemption query": 1,
-      "POS | General": 1,
-      "Payswitch Queries | Failed Order Refund Query": 3,
-      "Printer | Printer troubleshooting": 1,
-      "Printer | RAM Collection/Delivery Query": 1,
-      "VoIP | General Query": 2
-    },
     "2026-08-08": {
       "Orders | Order Details Confirmation": 1
     },
