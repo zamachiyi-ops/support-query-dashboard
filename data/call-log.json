@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-05T14:33:22.540Z",
+  "last_synced": "2026-10-05T14:57:55.809Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-07",
