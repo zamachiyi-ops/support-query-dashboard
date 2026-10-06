@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-06T15:28:16.679Z",
+  "last_synced": "2026-10-06T15:55:53.332Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-08",
@@ -1150,14 +1150,14 @@
     },
     "2026-10-06": {
       "POS": 1,
-      "Dashboard": 2,
+      "Dashboard": 3,
       "Outlet Settings": 3,
       "Menu": 1,
       "Orders": 0,
       "Payswitch Queries": 0,
       "Non-Payswitch Queries": 0,
       "Delivery Provider": 2,
-      "EVouchers": 1,
+      "EVouchers": 3,
       "Printer": 3,
       "Switchboard": 0,
       "VoIP": 0,
@@ -1753,9 +1753,9 @@
     },
     "2026-10-06": {
       "Dashboard | Out of Stock Script Request": 1,
-      "Dashboard | Store Settings": 1,
+      "Dashboard | Store Settings": 2,
       "Delivery Provider | Delivery Tribe": 2,
-      "EVouchers | Wigroup code": 1,
+      "EVouchers | Wigroup code": 3,
       "Menu | Item Query": 1,
       "Outlet Settings | Delivery zones settings update": 3,
       "POS | General": 1,
