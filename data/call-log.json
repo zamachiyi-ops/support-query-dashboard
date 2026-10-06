@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-06T13:56:14.678Z",
+  "last_synced": "2026-10-06T14:29:43.303Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-08",
@@ -1163,7 +1163,7 @@
       "VoIP": 0,
       "Reports": 0,
       "Accounts": 0,
-      "Sales Query": 1,
+      "Sales Query": 2,
       "System issue": 0,
       "Feedback About YUMBI": 0
     }
@@ -1761,7 +1761,7 @@
       "POS | General": 1,
       "Printer | Printer troubleshooting": 1,
       "Printer | Query on how the printer works": 2,
-      "Sales Query | New lead": 1
+      "Sales Query | New lead": 2
     }
   },
   "unmapped_queries": {}
