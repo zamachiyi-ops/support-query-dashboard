@@ -1,11 +1,11 @@
 {
   "source": "LiveChat",
   "measure": "Tag uses (one chat can have more than one tag)",
-  "last_synced": "2026-10-06T21:39:38.497Z",
+  "last_synced": "2026-10-06T22:05:41.893Z",
   "timezone": "Africa/Johannesburg",
   "range": {
-    "from": "2026-08-08",
-    "to": "2026-10-06"
+    "from": "2026-08-09",
+    "to": "2026-10-07"
   },
   "categories": [
     "Order tracking & updates",
@@ -20,18 +20,6 @@
     "Store/merchant queries"
   ],
   "daily": {
-    "2026-08-08": {
-      "Order tracking & updates": 175,
-      "Complaints": 50,
-      "Refunds & payments": 38,
-      "Vouchers & promo codes": 16,
-      "How to order": 11,
-      "Account & login": 2,
-      "General & feedback": 3,
-      "Delivery address": 0,
-      "Store & menu info": 1,
-      "Store/merchant queries": 0
-    },
     "2026-08-09": {
       "Order tracking & updates": 138,
       "Complaints": 32,
@@ -738,6 +726,18 @@
       "General & feedback": 3,
       "Delivery address": 1,
       "Store & menu info": 1,
+      "Store/merchant queries": 0
+    },
+    "2026-10-07": {
+      "Order tracking & updates": 0,
+      "Complaints": 0,
+      "Refunds & payments": 0,
+      "Vouchers & promo codes": 0,
+      "How to order": 0,
+      "Account & login": 0,
+      "General & feedback": 0,
+      "Delivery address": 0,
+      "Store & menu info": 0,
       "Store/merchant queries": 0
     }
   },
