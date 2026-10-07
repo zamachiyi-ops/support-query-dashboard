@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-07T08:56:11.388Z",
+  "last_synced": "2026-10-07T09:29:42.847Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-09",
@@ -1150,16 +1150,16 @@
     },
     "2026-10-07": {
       "POS": 2,
-      "Dashboard": 2,
+      "Dashboard": 3,
       "Outlet Settings": 2,
       "Menu": 0,
-      "Orders": 0,
+      "Orders": 1,
       "Payswitch Queries": 0,
       "Non-Payswitch Queries": 0,
       "Delivery Provider": 0,
       "EVouchers": 0,
-      "Printer": 0,
-      "Switchboard": 0,
+      "Printer": 1,
+      "Switchboard": 1,
       "VoIP": 0,
       "Reports": 0,
       "Accounts": 0,
@@ -1762,9 +1762,13 @@
     },
     "2026-10-07": {
       "Dashboard | Campaign Related Query": 2,
+      "Dashboard | Delivery Zone Management": 1,
+      "Orders | Order Details Confirmation": 1,
       "Outlet Settings | Custom Delivery Zones": 1,
       "Outlet Settings | Delivery zones settings update": 1,
-      "POS | How to Capture Order": 2
+      "POS | How to Capture Order": 2,
+      "Printer | Printer troubleshooting": 1,
+      "Switchboard | CC Settings Query": 1
     }
   },
   "unmapped_queries": {}
