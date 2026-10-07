@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-07T12:35:42.526Z",
+  "last_synced": "2026-10-07T13:02:28.240Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-09",
@@ -1149,8 +1149,8 @@
       "Feedback About YUMBI": 0
     },
     "2026-10-07": {
-      "POS": 2,
-      "Dashboard": 6,
+      "POS": 3,
+      "Dashboard": 8,
       "Outlet Settings": 2,
       "Menu": 0,
       "Orders": 2,
@@ -1761,11 +1761,13 @@
       "Sales Query | New lead": 2
     },
     "2026-10-07": {
-      "Dashboard | Campaign Related Query": 5,
+      "Dashboard | Access request": 1,
+      "Dashboard | Campaign Related Query": 6,
       "Dashboard | Delivery Zone Management": 1,
       "Orders | Order Details Confirmation": 2,
       "Outlet Settings | Custom Delivery Zones": 1,
       "Outlet Settings | Delivery zones settings update": 1,
+      "POS | General": 1,
       "POS | How to Capture Order": 2,
       "Printer | Printer troubleshooting": 1,
       "Switchboard | CC Settings Query": 1,
