@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-07T15:59:47.912Z",
+  "last_synced": "2026-10-07T16:31:30.095Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-09",
@@ -1157,7 +1157,7 @@
       "Payswitch Queries": 0,
       "Non-Payswitch Queries": 0,
       "Delivery Provider": 0,
-      "EVouchers": 0,
+      "EVouchers": 1,
       "Printer": 1,
       "Switchboard": 2,
       "VoIP": 0,
@@ -1765,6 +1765,7 @@
       "Dashboard | Access request": 1,
       "Dashboard | Campaign Related Query": 6,
       "Dashboard | Delivery Zone Management": 1,
+      "EVouchers | Wigroup code": 1,
       "Orders | Order Details Confirmation": 2,
       "Outlet Settings | Custom Delivery Zones": 1,
       "Outlet Settings | Delivery zones settings update": 2,
