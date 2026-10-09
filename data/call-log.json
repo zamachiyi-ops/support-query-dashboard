@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-09T15:57:09.850Z",
+  "last_synced": "2026-10-09T16:29:03.305Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-11",
@@ -1157,7 +1157,7 @@
       "Payswitch Queries": 0,
       "Non-Payswitch Queries": 0,
       "Delivery Provider": 0,
-      "EVouchers": 2,
+      "EVouchers": 3,
       "Printer": 0,
       "Switchboard": 1,
       "VoIP": 0,
@@ -1776,6 +1776,7 @@
       "Dashboard | Campaign Related Query": 3,
       "Dashboard | Order History/Refunds": 1,
       "EVouchers | Voucher information": 2,
+      "EVouchers | Wigroup code": 1,
       "Orders | Order Details Confirmation": 1,
       "Sales Query | Change of ownership": 1,
       "Switchboard | On boarding": 1
