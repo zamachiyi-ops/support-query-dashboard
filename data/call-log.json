@@ -1,11 +1,11 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-10T21:53:50.227Z",
+  "last_synced": "2026-10-10T22:25:37.951Z",
   "timezone": "Africa/Johannesburg",
   "range": {
-    "from": "2026-08-12",
-    "to": "2026-10-10"
+    "from": "2026-08-13",
+    "to": "2026-10-11"
   },
   "categories": [
     "POS",
@@ -27,25 +27,6 @@
     "Feedback About YUMBI"
   ],
   "daily": {
-    "2026-08-12": {
-      "POS": 3,
-      "Dashboard": 2,
-      "Outlet Settings": 0,
-      "Menu": 0,
-      "Orders": 1,
-      "Payswitch Queries": 0,
-      "Non-Payswitch Queries": 0,
-      "Delivery Provider": 0,
-      "EVouchers": 1,
-      "Printer": 1,
-      "Switchboard": 0,
-      "VoIP": 2,
-      "Reports": 1,
-      "Accounts": 0,
-      "Sales Query": 0,
-      "System issue": 0,
-      "Feedback About YUMBI": 0
-    },
     "2026-08-13": {
       "POS": 0,
       "Dashboard": 0,
@@ -1166,21 +1147,28 @@
       "Sales Query": 0,
       "System issue": 0,
       "Feedback About YUMBI": 0
+    },
+    "2026-10-11": {
+      "POS": 0,
+      "Dashboard": 0,
+      "Outlet Settings": 0,
+      "Menu": 0,
+      "Orders": 0,
+      "Payswitch Queries": 0,
+      "Non-Payswitch Queries": 0,
+      "Delivery Provider": 0,
+      "EVouchers": 0,
+      "Printer": 0,
+      "Switchboard": 0,
+      "VoIP": 0,
+      "Reports": 0,
+      "Accounts": 0,
+      "Sales Query": 0,
+      "System issue": 0,
+      "Feedback About YUMBI": 0
     }
   },
   "subquery_daily": {
-    "2026-08-12": {
-      "Dashboard | Order History/Refunds": 1,
-      "Dashboard | User Management": 1,
-      "EVouchers | Redemption query": 1,
-      "Orders | Order Details Confirmation": 1,
-      "POS | How to Capture Order": 1,
-      "POS | Offline Store": 1,
-      "POS | POS report": 1,
-      "Printer | Query on how the printer works": 1,
-      "Reports | Data query": 1,
-      "VoIP | General Query": 2
-    },
     "2026-08-13": {
       "EVouchers | Payout query": 1,
       "EVouchers | Wigroup code": 2,
