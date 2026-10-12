@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-12T09:33:08.241Z",
+  "last_synced": "2026-10-12T09:59:27.412Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-14",
@@ -1157,7 +1157,7 @@
       "Payswitch Queries": 0,
       "Non-Payswitch Queries": 0,
       "Delivery Provider": 0,
-      "EVouchers": 0,
+      "EVouchers": 1,
       "Printer": 0,
       "Switchboard": 0,
       "VoIP": 0,
@@ -1761,6 +1761,7 @@
       "VoIP | Number Query": 1
     },
     "2026-10-12": {
+      "EVouchers | Redemption query": 1,
       "Orders | Order Details Confirmation": 1
     }
   },
