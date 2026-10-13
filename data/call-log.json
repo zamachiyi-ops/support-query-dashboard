@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-13T10:59:15.182Z",
+  "last_synced": "2026-10-13T11:31:22.182Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-15",
@@ -1150,17 +1150,17 @@
     },
     "2026-10-13": {
       "POS": 0,
-      "Dashboard": 2,
+      "Dashboard": 3,
       "Outlet Settings": 1,
       "Menu": 0,
       "Orders": 0,
       "Payswitch Queries": 0,
       "Non-Payswitch Queries": 0,
-      "Delivery Provider": 0,
+      "Delivery Provider": 1,
       "EVouchers": 1,
       "Printer": 2,
       "Switchboard": 0,
-      "VoIP": 1,
+      "VoIP": 3,
       "Reports": 0,
       "Accounts": 0,
       "Sales Query": 0,
@@ -1764,12 +1764,13 @@
       "Switchboard | On-Boarding Follow Up": 1
     },
     "2026-10-13": {
-      "Dashboard | Campaign Related Query": 1,
+      "Dashboard | Campaign Related Query": 2,
       "Dashboard | Store Settings": 1,
+      "Delivery Provider | Skededal": 1,
       "EVouchers | Payout query": 1,
       "Outlet Settings | POS activation": 1,
       "Printer | Printer troubleshooting": 2,
-      "VoIP | General Query": 1
+      "VoIP | General Query": 3
     }
   },
   "unmapped_queries": {}
