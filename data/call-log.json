@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-14T15:52:51.208Z",
+  "last_synced": "2026-10-14T16:43:05.127Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-16",
@@ -1151,9 +1151,9 @@
     "2026-10-14": {
       "POS": 2,
       "Dashboard": 2,
-      "Outlet Settings": 2,
+      "Outlet Settings": 3,
       "Menu": 2,
-      "Orders": 3,
+      "Orders": 4,
       "Payswitch Queries": 1,
       "Non-Payswitch Queries": 0,
       "Delivery Provider": 0,
@@ -1781,8 +1781,8 @@
       "EVouchers | Wigroup code": 2,
       "Menu | Item Query": 1,
       "Menu | Out of Stock": 1,
-      "Orders | Order Details Confirmation": 3,
-      "Outlet Settings | Delivery zones settings update": 1,
+      "Orders | Order Details Confirmation": 4,
+      "Outlet Settings | Delivery zones settings update": 2,
       "Outlet Settings | Trading times update": 1,
       "POS | Failed Order": 1,
       "POS | Offline Store": 1,
