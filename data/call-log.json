@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-14T06:50:05.626Z",
+  "last_synced": "2026-10-14T07:46:32.086Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-16",
@@ -1151,7 +1151,7 @@
     "2026-10-14": {
       "POS": 0,
       "Dashboard": 0,
-      "Outlet Settings": 0,
+      "Outlet Settings": 1,
       "Menu": 0,
       "Orders": 0,
       "Payswitch Queries": 0,
@@ -1775,7 +1775,8 @@
       "VoIP | General Query": 3
     },
     "2026-10-14": {
-      "Accounts | Documentation": 1
+      "Accounts | Documentation": 1,
+      "Outlet Settings | Trading times update": 1
     }
   },
   "unmapped_queries": {}
