@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-14T12:51:01.689Z",
+  "last_synced": "2026-10-14T13:44:49.651Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-16",
@@ -1150,7 +1150,7 @@
     },
     "2026-10-14": {
       "POS": 2,
-      "Dashboard": 1,
+      "Dashboard": 2,
       "Outlet Settings": 2,
       "Menu": 1,
       "Orders": 2,
@@ -1776,6 +1776,7 @@
     },
     "2026-10-14": {
       "Accounts | Documentation": 4,
+      "Dashboard | Delivery Zone Management": 1,
       "Dashboard | Store Settings": 1,
       "EVouchers | Wigroup code": 2,
       "Menu | Item Query": 1,
