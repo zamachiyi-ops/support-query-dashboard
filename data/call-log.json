@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-15T12:51:13.444Z",
+  "last_synced": "2026-10-15T13:48:41.212Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-17",
@@ -1152,14 +1152,14 @@
       "POS": 1,
       "Dashboard": 0,
       "Outlet Settings": 2,
-      "Menu": 1,
+      "Menu": 2,
       "Orders": 4,
       "Payswitch Queries": 0,
       "Non-Payswitch Queries": 0,
       "Delivery Provider": 1,
       "EVouchers": 0,
       "Printer": 4,
-      "Switchboard": 0,
+      "Switchboard": 1,
       "VoIP": 1,
       "Reports": 0,
       "Accounts": 2,
@@ -1783,6 +1783,7 @@
     "2026-10-15": {
       "Accounts | Documentation": 2,
       "Delivery Provider | Uber Integration Query": 1,
+      "Menu | Item Query": 1,
       "Menu | Out of Stock": 1,
       "Orders | Order Details Confirmation": 4,
       "Outlet Settings | Delivery zones settings update": 2,
@@ -1790,6 +1791,7 @@
       "Printer | Printer troubleshooting": 2,
       "Printer | RAM Collection/Delivery Query": 1,
       "Printer | Replacement Request": 1,
+      "Switchboard | Softphone Link": 1,
       "VoIP | General Query": 1
     }
   },
