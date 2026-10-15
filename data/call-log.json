@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-15T11:10:27.778Z",
+  "last_synced": "2026-10-15T11:41:19.138Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-17",
@@ -1151,12 +1151,12 @@
     "2026-10-15": {
       "POS": 1,
       "Dashboard": 0,
-      "Outlet Settings": 1,
+      "Outlet Settings": 2,
       "Menu": 1,
-      "Orders": 3,
+      "Orders": 4,
       "Payswitch Queries": 0,
       "Non-Payswitch Queries": 0,
-      "Delivery Provider": 0,
+      "Delivery Provider": 1,
       "EVouchers": 0,
       "Printer": 4,
       "Switchboard": 0,
@@ -1782,9 +1782,10 @@
     },
     "2026-10-15": {
       "Accounts | Documentation": 2,
+      "Delivery Provider | Uber Integration Query": 1,
       "Menu | Out of Stock": 1,
-      "Orders | Order Details Confirmation": 3,
-      "Outlet Settings | Delivery zones settings update": 1,
+      "Orders | Order Details Confirmation": 4,
+      "Outlet Settings | Delivery zones settings update": 2,
       "POS | How to Capture Order": 1,
       "Printer | Printer troubleshooting": 2,
       "Printer | RAM Collection/Delivery Query": 1,
