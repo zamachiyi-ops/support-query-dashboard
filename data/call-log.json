@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-16T10:42:30.192Z",
+  "last_synced": "2026-10-16T11:11:18.862Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-18",
@@ -1149,9 +1149,9 @@
       "Feedback About YUMBI": 0
     },
     "2026-10-16": {
-      "POS": 2,
+      "POS": 3,
       "Dashboard": 2,
-      "Outlet Settings": 1,
+      "Outlet Settings": 2,
       "Menu": 1,
       "Orders": 1,
       "Payswitch Queries": 0,
@@ -1788,9 +1788,11 @@
       "EVouchers | Wigroup code": 1,
       "Menu | Item Removal": 1,
       "Orders | Order Details Confirmation": 1,
+      "Outlet Settings | Store ID Query": 1,
       "Outlet Settings | Trading times update": 1,
       "POS | Failed Order": 1,
       "POS | How to Capture Order": 1,
+      "POS | POS report": 1,
       "Printer | Printer troubleshooting": 1,
       "Printer | Query on how the printer works": 1,
       "Printer | Replacement Request": 1,
