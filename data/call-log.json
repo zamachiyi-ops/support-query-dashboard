@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-17T15:01:21.657Z",
+  "last_synced": "2026-10-17T15:35:51.402Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-19",
@@ -1150,7 +1150,7 @@
     },
     "2026-10-17": {
       "POS": 1,
-      "Dashboard": 1,
+      "Dashboard": 2,
       "Outlet Settings": 1,
       "Menu": 0,
       "Orders": 4,
@@ -1790,6 +1790,7 @@
     },
     "2026-10-17": {
       "Dashboard | Delivery Zone Management": 1,
+      "Dashboard | Order History/Refunds": 1,
       "Orders | Order Details Confirmation": 4,
       "Outlet Settings | Custom Delivery Zones": 1,
       "POS | How to Capture Order": 1
