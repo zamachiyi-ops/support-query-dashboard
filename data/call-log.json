@@ -1,11 +1,11 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-17T21:35:24.303Z",
+  "last_synced": "2026-10-17T22:01:22.381Z",
   "timezone": "Africa/Johannesburg",
   "range": {
-    "from": "2026-08-19",
-    "to": "2026-10-17"
+    "from": "2026-08-20",
+    "to": "2026-10-18"
   },
   "categories": [
     "POS",
@@ -27,25 +27,6 @@
     "Feedback About YUMBI"
   ],
   "daily": {
-    "2026-08-19": {
-      "POS": 1,
-      "Dashboard": 4,
-      "Outlet Settings": 1,
-      "Menu": 0,
-      "Orders": 0,
-      "Payswitch Queries": 0,
-      "Non-Payswitch Queries": 0,
-      "Delivery Provider": 1,
-      "EVouchers": 3,
-      "Printer": 2,
-      "Switchboard": 0,
-      "VoIP": 0,
-      "Reports": 0,
-      "Accounts": 0,
-      "Sales Query": 0,
-      "System issue": 0,
-      "Feedback About YUMBI": 0
-    },
     "2026-08-20": {
       "POS": 0,
       "Dashboard": 3,
@@ -1166,22 +1147,28 @@
       "Sales Query": 0,
       "System issue": 0,
       "Feedback About YUMBI": 0
+    },
+    "2026-10-18": {
+      "POS": 0,
+      "Dashboard": 0,
+      "Outlet Settings": 0,
+      "Menu": 0,
+      "Orders": 0,
+      "Payswitch Queries": 0,
+      "Non-Payswitch Queries": 0,
+      "Delivery Provider": 0,
+      "EVouchers": 0,
+      "Printer": 0,
+      "Switchboard": 0,
+      "VoIP": 0,
+      "Reports": 0,
+      "Accounts": 0,
+      "Sales Query": 0,
+      "System issue": 0,
+      "Feedback About YUMBI": 0
     }
   },
   "subquery_daily": {
-    "2026-08-19": {
-      "Dashboard | Access request": 1,
-      "Dashboard | Delivery Zone Management": 1,
-      "Dashboard | Order History/Refunds": 1,
-      "Dashboard | Out of Stock Script Request": 1,
-      "Delivery Provider | Delivery Tribe": 1,
-      "EVouchers | Payout query": 1,
-      "EVouchers | Redemption query": 1,
-      "EVouchers | Wigroup code": 1,
-      "Outlet Settings | Trading times update": 1,
-      "POS | POS report": 1,
-      "Printer | Replacement Request": 2
-    },
     "2026-08-20": {
       "Dashboard | Access request": 1,
       "Dashboard | User Management": 2,
