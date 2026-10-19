@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-19T10:18:24.616Z",
+  "last_synced": "2026-10-19T11:10:37.701Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-21",
@@ -1154,7 +1154,7 @@
       "Outlet Settings": 1,
       "Menu": 1,
       "Orders": 3,
-      "Payswitch Queries": 0,
+      "Payswitch Queries": 1,
       "Non-Payswitch Queries": 0,
       "Delivery Provider": 0,
       "EVouchers": 0,
@@ -1782,7 +1782,8 @@
     "2026-10-19": {
       "Menu | Item Query": 1,
       "Orders | Order Details Confirmation": 3,
-      "Outlet Settings | Delivery zones settings update": 1
+      "Outlet Settings | Delivery zones settings update": 1,
+      "Payswitch Queries | Failed Order Refund Query": 1
     }
   },
   "unmapped_queries": {}
