@@ -1,7 +1,7 @@
 {
   "source": "LiveChat",
   "measure": "Tag uses (one chat can have more than one tag)",
-  "last_synced": "2026-10-20T09:58:20.640Z",
+  "last_synced": "2026-10-20T10:23:45.643Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-22",
@@ -729,12 +729,12 @@
       "Store/merchant queries": 0
     },
     "2026-10-20": {
-      "Order tracking & updates": 23,
+      "Order tracking & updates": 25,
       "Complaints": 5,
       "Refunds & payments": 4,
       "Vouchers & promo codes": 3,
       "How to order": 0,
-      "Account & login": 1,
+      "Account & login": 3,
       "General & feedback": 0,
       "Delivery address": 0,
       "Store & menu info": 0,
