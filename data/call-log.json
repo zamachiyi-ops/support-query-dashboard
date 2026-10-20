@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-20T11:11:02.116Z",
+  "last_synced": "2026-10-20T11:41:43.397Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-22",
@@ -1157,7 +1157,7 @@
       "Payswitch Queries": 0,
       "Non-Payswitch Queries": 0,
       "Delivery Provider": 0,
-      "EVouchers": 0,
+      "EVouchers": 1,
       "Printer": 1,
       "Switchboard": 0,
       "VoIP": 0,
@@ -1774,6 +1774,7 @@
     },
     "2026-10-20": {
       "Dashboard | Delivery Zone Management": 1,
+      "EVouchers | Wigroup code": 1,
       "Menu | Item Query": 1,
       "Menu | Price issue": 2,
       "Printer | Printer troubleshooting": 1
