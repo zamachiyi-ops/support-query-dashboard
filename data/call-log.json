@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-20T12:50:49.430Z",
+  "last_synced": "2026-10-20T13:49:00.642Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-22",
@@ -1162,7 +1162,7 @@
       "Switchboard": 0,
       "VoIP": 0,
       "Reports": 0,
-      "Accounts": 0,
+      "Accounts": 2,
       "Sales Query": 0,
       "System issue": 0,
       "Feedback About YUMBI": 0
@@ -1773,6 +1773,7 @@
       "Payswitch Queries | Failed Order Refund Query": 1
     },
     "2026-10-20": {
+      "Accounts | Documentation": 2,
       "Dashboard | Delivery Zone Management": 1,
       "EVouchers | Wigroup code": 1,
       "Menu | Item Query": 1,
