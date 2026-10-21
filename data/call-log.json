@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-21T11:40:47.404Z",
+  "last_synced": "2026-10-21T12:12:05.450Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-23",
@@ -1152,7 +1152,7 @@
       "POS": 0,
       "Dashboard": 4,
       "Outlet Settings": 1,
-      "Menu": 0,
+      "Menu": 1,
       "Orders": 1,
       "Payswitch Queries": 0,
       "Non-Payswitch Queries": 0,
@@ -1779,6 +1779,7 @@
       "Accounts | Documentation": 1,
       "Dashboard | Access request": 1,
       "Dashboard | Campaign Related Query": 3,
+      "Menu | Item Query": 1,
       "Orders | Order Details Confirmation": 1,
       "Outlet Settings | Payment methods settings": 1
     }
