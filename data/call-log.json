@@ -1,11 +1,11 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-22T21:41:16.685Z",
+  "last_synced": "2026-10-22T22:11:06.802Z",
   "timezone": "Africa/Johannesburg",
   "range": {
-    "from": "2026-08-24",
-    "to": "2026-10-22"
+    "from": "2026-08-25",
+    "to": "2026-10-23"
   },
   "categories": [
     "POS",
@@ -27,25 +27,6 @@
     "Feedback About YUMBI"
   ],
   "daily": {
-    "2026-08-24": {
-      "POS": 2,
-      "Dashboard": 1,
-      "Outlet Settings": 1,
-      "Menu": 0,
-      "Orders": 3,
-      "Payswitch Queries": 1,
-      "Non-Payswitch Queries": 0,
-      "Delivery Provider": 1,
-      "EVouchers": 1,
-      "Printer": 2,
-      "Switchboard": 1,
-      "VoIP": 4,
-      "Reports": 2,
-      "Accounts": 1,
-      "Sales Query": 0,
-      "System issue": 0,
-      "Feedback About YUMBI": 0
-    },
     "2026-08-25": {
       "POS": 0,
       "Dashboard": 2,
@@ -1166,24 +1147,28 @@
       "Sales Query": 0,
       "System issue": 0,
       "Feedback About YUMBI": 0
+    },
+    "2026-10-23": {
+      "POS": 0,
+      "Dashboard": 0,
+      "Outlet Settings": 0,
+      "Menu": 0,
+      "Orders": 0,
+      "Payswitch Queries": 0,
+      "Non-Payswitch Queries": 0,
+      "Delivery Provider": 0,
+      "EVouchers": 0,
+      "Printer": 0,
+      "Switchboard": 0,
+      "VoIP": 0,
+      "Reports": 0,
+      "Accounts": 0,
+      "Sales Query": 0,
+      "System issue": 0,
+      "Feedback About YUMBI": 0
     }
   },
   "subquery_daily": {
-    "2026-08-24": {
-      "Accounts | Documentation": 1,
-      "Dashboard | Campaign Related Query": 1,
-      "Delivery Provider | Skededal": 1,
-      "EVouchers | Wigroup code": 1,
-      "Orders | Order Details Confirmation": 3,
-      "Outlet Settings | Delivery zones settings update": 1,
-      "POS | How to Capture Order": 1,
-      "POS | POS report": 1,
-      "Payswitch Queries | Double Debit Query": 1,
-      "Printer | Printer troubleshooting": 2,
-      "Reports | Data query": 2,
-      "Switchboard | CC Settings Query": 1,
-      "VoIP | General Query": 4
-    },
     "2026-08-25": {
       "Dashboard | Out of Stock Script Request": 1,
       "Dashboard | Store Settings": 1,
