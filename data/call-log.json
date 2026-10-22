@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-22T11:12:35.715Z",
+  "last_synced": "2026-10-22T11:44:38.539Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-24",
@@ -1158,7 +1158,7 @@
       "Non-Payswitch Queries": 0,
       "Delivery Provider": 0,
       "EVouchers": 0,
-      "Printer": 0,
+      "Printer": 1,
       "Switchboard": 2,
       "VoIP": 0,
       "Reports": 0,
@@ -1789,6 +1789,7 @@
       "Menu | Price issue": 1,
       "Orders | Order Details Confirmation": 1,
       "POS | General": 2,
+      "Printer | Printer troubleshooting": 1,
       "Switchboard | CC Settings Query": 2
     }
   },
