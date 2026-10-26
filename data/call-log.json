@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-10-26T09:50:51.224Z",
+  "last_synced": "2026-10-26T10:47:34.273Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-08-28",
@@ -1150,7 +1150,7 @@
     },
     "2026-10-26": {
       "POS": 0,
-      "Dashboard": 4,
+      "Dashboard": 5,
       "Outlet Settings": 1,
       "Menu": 0,
       "Orders": 1,
@@ -1774,7 +1774,7 @@
     "2026-10-26": {
       "Accounts | Documentation": 1,
       "Dashboard | Delivery Zone Management": 3,
-      "Dashboard | Order History/Refunds": 1,
+      "Dashboard | Order History/Refunds": 2,
       "Orders | Order Details Confirmation": 1,
       "Outlet Settings | Custom Delivery Zones": 1,
       "Payswitch Queries | Failed Order Refund Query": 1,
