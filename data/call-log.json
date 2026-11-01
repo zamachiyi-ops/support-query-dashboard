@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-11-01T09:15:59.420Z",
+  "last_synced": "2026-11-01T16:22:54.663Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-09-03",
@@ -1154,11 +1154,11 @@
       "Outlet Settings": 1,
       "Menu": 0,
       "Orders": 0,
-      "Payswitch Queries": 0,
-      "Non-Payswitch Queries": 1,
+      "Payswitch Queries": 1,
+      "Non-Payswitch Queries": 4,
       "Delivery Provider": 0,
       "EVouchers": 0,
-      "Printer": 0,
+      "Printer": 1,
       "Switchboard": 0,
       "VoIP": 0,
       "Reports": 0,
@@ -1772,9 +1772,11 @@
       "Dashboard | Order History/Refunds": 1,
       "Dashboard | Out of Stock Script Request": 1,
       "Dashboard | Store Settings": 1,
-      "Non-Payswitch Queries | Payfast:Failed Order Refund Query": 1,
+      "Non-Payswitch Queries | Payfast:Failed Order Refund Query": 4,
       "Outlet Settings | Trading times update": 1,
-      "POS | Offline Store": 1
+      "POS | Offline Store": 1,
+      "Payswitch Queries | Failed Order Refund Query": 1,
+      "Printer | Printer troubleshooting": 1
     }
   },
   "unmapped_queries": {}
