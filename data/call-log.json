@@ -1,11 +1,11 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-11-01T20:49:24.636Z",
+  "last_synced": "2026-11-02T00:41:01.664Z",
   "timezone": "Africa/Johannesburg",
   "range": {
-    "from": "2026-09-03",
-    "to": "2026-11-01"
+    "from": "2026-09-04",
+    "to": "2026-11-02"
   },
   "categories": [
     "POS",
@@ -27,25 +27,6 @@
     "Feedback About YUMBI"
   ],
   "daily": {
-    "2026-09-03": {
-      "POS": 3,
-      "Dashboard": 4,
-      "Outlet Settings": 0,
-      "Menu": 0,
-      "Orders": 3,
-      "Payswitch Queries": 1,
-      "Non-Payswitch Queries": 0,
-      "Delivery Provider": 1,
-      "EVouchers": 1,
-      "Printer": 2,
-      "Switchboard": 0,
-      "VoIP": 0,
-      "Reports": 0,
-      "Accounts": 0,
-      "Sales Query": 0,
-      "System issue": 0,
-      "Feedback About YUMBI": 0
-    },
     "2026-09-04": {
       "POS": 0,
       "Dashboard": 7,
@@ -1166,20 +1147,28 @@
       "Sales Query": 0,
       "System issue": 0,
       "Feedback About YUMBI": 0
+    },
+    "2026-11-02": {
+      "POS": 0,
+      "Dashboard": 0,
+      "Outlet Settings": 0,
+      "Menu": 0,
+      "Orders": 0,
+      "Payswitch Queries": 0,
+      "Non-Payswitch Queries": 0,
+      "Delivery Provider": 0,
+      "EVouchers": 0,
+      "Printer": 0,
+      "Switchboard": 0,
+      "VoIP": 0,
+      "Reports": 0,
+      "Accounts": 0,
+      "Sales Query": 0,
+      "System issue": 0,
+      "Feedback About YUMBI": 0
     }
   },
   "subquery_daily": {
-    "2026-09-03": {
-      "Dashboard | Access request": 1,
-      "Dashboard | Order History/Refunds": 3,
-      "Delivery Provider | Skededal": 1,
-      "EVouchers | Payout query": 1,
-      "Orders | Order Details Confirmation": 3,
-      "POS | General": 3,
-      "Payswitch Queries | Failed Order Refund Query": 1,
-      "Printer | Printer troubleshooting": 1,
-      "Printer | Query on how the printer works": 1
-    },
     "2026-09-04": {
       "Accounts | Documentation": 1,
       "Dashboard | Access request": 4,
