@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-11-03T14:40:27.955Z",
+  "last_synced": "2026-11-03T20:38:59.440Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-09-05",
@@ -1157,7 +1157,7 @@
       "Payswitch Queries": 0,
       "Non-Payswitch Queries": 0,
       "Delivery Provider": 0,
-      "EVouchers": 2,
+      "EVouchers": 3,
       "Printer": 1,
       "Switchboard": 4,
       "VoIP": 0,
@@ -1769,7 +1769,7 @@
     "2026-11-03": {
       "Accounts | Debtors": 1,
       "Dashboard | Access request": 1,
-      "EVouchers | Redemption query": 1,
+      "EVouchers | Redemption query": 2,
       "EVouchers | Voucher information": 1,
       "Orders | Order Details Confirmation": 1,
       "POS | General": 1,
