@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-11-08T05:56:35.687Z",
+  "last_synced": "2026-11-08T13:18:59.157Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-09-10",
@@ -1150,18 +1150,18 @@
     },
     "2026-11-08": {
       "POS": 0,
-      "Dashboard": 0,
+      "Dashboard": 1,
       "Outlet Settings": 0,
       "Menu": 0,
-      "Orders": 0,
+      "Orders": 1,
       "Payswitch Queries": 0,
       "Non-Payswitch Queries": 0,
-      "Delivery Provider": 0,
+      "Delivery Provider": 1,
       "EVouchers": 0,
-      "Printer": 0,
+      "Printer": 2,
       "Switchboard": 0,
       "VoIP": 0,
-      "Reports": 0,
+      "Reports": 1,
       "Accounts": 0,
       "Sales Query": 0,
       "System issue": 0,
@@ -1789,6 +1789,13 @@
       "POS | Offline Store": 2,
       "Printer | Query on how the printer works": 1,
       "Sales Query | New lead": 2
+    },
+    "2026-11-08": {
+      "Dashboard | Store Settings": 1,
+      "Delivery Provider | Uber Integration Query": 1,
+      "Orders | Order Details Confirmation": 1,
+      "Printer | Printer troubleshooting": 2,
+      "Reports | Data query": 1
     }
   },
   "unmapped_queries": {}
