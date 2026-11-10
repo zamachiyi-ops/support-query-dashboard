@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-11-10T02:43:45.846Z",
+  "last_synced": "2026-11-10T10:27:45.284Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-09-12",
@@ -1151,18 +1151,18 @@
     "2026-11-10": {
       "POS": 0,
       "Dashboard": 0,
-      "Outlet Settings": 0,
+      "Outlet Settings": 1,
       "Menu": 0,
       "Orders": 0,
       "Payswitch Queries": 0,
       "Non-Payswitch Queries": 0,
       "Delivery Provider": 0,
       "EVouchers": 0,
-      "Printer": 0,
-      "Switchboard": 0,
+      "Printer": 1,
+      "Switchboard": 1,
       "VoIP": 0,
       "Reports": 0,
-      "Accounts": 0,
+      "Accounts": 2,
       "Sales Query": 0,
       "System issue": 0,
       "Feedback About YUMBI": 0
@@ -1790,6 +1790,13 @@
       "Switchboard | CC Settings Query": 5,
       "Switchboard | Softphone Link": 1,
       "VoIP | Softphone issue": 1
+    },
+    "2026-11-10": {
+      "Accounts | Debtors": 1,
+      "Accounts | Documentation": 1,
+      "Outlet Settings | Telephone number update": 1,
+      "Printer | Printer troubleshooting": 1,
+      "Switchboard | Softphone Link": 1
     }
   },
   "unmapped_queries": {}
