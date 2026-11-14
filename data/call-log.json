@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-11-14T13:47:12.850Z",
+  "last_synced": "2026-11-14T19:08:59.137Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-09-16",
@@ -1149,7 +1149,7 @@
       "Feedback About YUMBI": 0
     },
     "2026-11-14": {
-      "POS": 0,
+      "POS": 1,
       "Dashboard": 1,
       "Outlet Settings": 1,
       "Menu": 1,
@@ -1158,7 +1158,7 @@
       "Non-Payswitch Queries": 0,
       "Delivery Provider": 0,
       "EVouchers": 0,
-      "Printer": 0,
+      "Printer": 1,
       "Switchboard": 0,
       "VoIP": 0,
       "Reports": 1,
@@ -1812,6 +1812,8 @@
       "Dashboard | Order History/Refunds": 1,
       "Menu | Item Query": 1,
       "Outlet Settings | Trading times update": 1,
+      "POS | Failed Order": 1,
+      "Printer | Printer troubleshooting": 1,
       "Reports | Data query": 1
     }
   },
