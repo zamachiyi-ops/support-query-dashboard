@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-11-19T01:28:49.224Z",
+  "last_synced": "2026-11-19T09:29:58.848Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-09-21",
@@ -1150,20 +1150,20 @@
     },
     "2026-11-19": {
       "POS": 0,
-      "Dashboard": 0,
-      "Outlet Settings": 0,
+      "Dashboard": 3,
+      "Outlet Settings": 1,
       "Menu": 0,
-      "Orders": 0,
+      "Orders": 1,
       "Payswitch Queries": 0,
       "Non-Payswitch Queries": 0,
       "Delivery Provider": 0,
       "EVouchers": 0,
-      "Printer": 0,
-      "Switchboard": 0,
+      "Printer": 2,
+      "Switchboard": 1,
       "VoIP": 0,
       "Reports": 0,
       "Accounts": 0,
-      "Sales Query": 0,
+      "Sales Query": 2,
       "System issue": 0,
       "Feedback About YUMBI": 0
     }
@@ -1799,6 +1799,16 @@
       "Outlet Settings | Trading times update": 1,
       "Printer | Query on how the printer works": 1,
       "Printer | Replacement Request": 1,
+      "Switchboard | CC Settings Query": 1
+    },
+    "2026-11-19": {
+      "Dashboard | Access request": 2,
+      "Dashboard | Order History/Refunds": 1,
+      "Orders | Order Details Confirmation": 1,
+      "Outlet Settings | Trading times update": 1,
+      "Printer | Printer troubleshooting": 2,
+      "Sales Query | Change of ownership": 1,
+      "Sales Query | New lead": 1,
       "Switchboard | CC Settings Query": 1
     }
   },
