@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-11-20T08:30:14.764Z",
+  "last_synced": "2026-11-20T17:17:06.792Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-09-22",
@@ -1149,16 +1149,16 @@
       "Feedback About YUMBI": 0
     },
     "2026-11-20": {
-      "POS": 0,
-      "Dashboard": 0,
-      "Outlet Settings": 0,
-      "Menu": 0,
-      "Orders": 0,
+      "POS": 4,
+      "Dashboard": 3,
+      "Outlet Settings": 2,
+      "Menu": 3,
+      "Orders": 3,
       "Payswitch Queries": 0,
       "Non-Payswitch Queries": 0,
-      "Delivery Provider": 0,
-      "EVouchers": 0,
-      "Printer": 2,
+      "Delivery Provider": 1,
+      "EVouchers": 2,
+      "Printer": 9,
       "Switchboard": 1,
       "VoIP": 0,
       "Reports": 0,
@@ -1812,8 +1812,21 @@
       "Switchboard | On-Boarding Follow Up": 1
     },
     "2026-11-20": {
-      "Printer | Query on how the printer works": 1,
-      "Printer | Replacement Request": 1,
+      "Dashboard | Access request": 1,
+      "Dashboard | Delivery Zone Management": 1,
+      "Dashboard | User Management": 1,
+      "Delivery Provider | Delivery Tribe": 1,
+      "EVouchers | Wigroup code": 2,
+      "Menu | Out of Stock": 2,
+      "Menu | Price issue": 1,
+      "Orders | Order Details Confirmation": 3,
+      "Outlet Settings | Store ID Query": 1,
+      "Outlet Settings | Trading times update": 1,
+      "POS | How to Capture Order": 2,
+      "POS | POS report": 2,
+      "Printer | Printer troubleshooting": 5,
+      "Printer | Query on how the printer works": 2,
+      "Printer | Replacement Request": 2,
       "Sales Query | New lead": 1,
       "Switchboard | CC Settings Query": 1
     }
