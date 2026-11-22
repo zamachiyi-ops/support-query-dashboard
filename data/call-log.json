@@ -1,11 +1,11 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-11-21T20:04:36.764Z",
+  "last_synced": "2026-11-22T00:18:54.430Z",
   "timezone": "Africa/Johannesburg",
   "range": {
-    "from": "2026-09-23",
-    "to": "2026-11-21"
+    "from": "2026-09-24",
+    "to": "2026-11-22"
   },
   "categories": [
     "POS",
@@ -27,25 +27,6 @@
     "Feedback About YUMBI"
   ],
   "daily": {
-    "2026-09-23": {
-      "POS": 1,
-      "Dashboard": 4,
-      "Outlet Settings": 1,
-      "Menu": 1,
-      "Orders": 1,
-      "Payswitch Queries": 0,
-      "Non-Payswitch Queries": 0,
-      "Delivery Provider": 0,
-      "EVouchers": 1,
-      "Printer": 1,
-      "Switchboard": 0,
-      "VoIP": 1,
-      "Reports": 0,
-      "Accounts": 0,
-      "Sales Query": 0,
-      "System issue": 0,
-      "Feedback About YUMBI": 0
-    },
     "2026-09-24": {
       "POS": 0,
       "Dashboard": 3,
@@ -1166,21 +1147,28 @@
       "Sales Query": 0,
       "System issue": 0,
       "Feedback About YUMBI": 0
+    },
+    "2026-11-22": {
+      "POS": 0,
+      "Dashboard": 0,
+      "Outlet Settings": 0,
+      "Menu": 0,
+      "Orders": 0,
+      "Payswitch Queries": 0,
+      "Non-Payswitch Queries": 0,
+      "Delivery Provider": 0,
+      "EVouchers": 0,
+      "Printer": 0,
+      "Switchboard": 0,
+      "VoIP": 0,
+      "Reports": 0,
+      "Accounts": 0,
+      "Sales Query": 0,
+      "System issue": 0,
+      "Feedback About YUMBI": 0
     }
   },
   "subquery_daily": {
-    "2026-09-23": {
-      "Dashboard | Access request": 2,
-      "Dashboard | Campaign Related Query": 1,
-      "Dashboard | Order History/Refunds": 1,
-      "EVouchers | Wigroup code": 1,
-      "Menu | Mappings": 1,
-      "Orders | Order Details Confirmation": 1,
-      "Outlet Settings | Delivery zones settings update": 1,
-      "POS | Offline Store": 1,
-      "Printer | Query on how the printer works": 1,
-      "VoIP | General Query": 1
-    },
     "2026-09-24": {
       "Dashboard | Delivery Zone Management": 1,
       "Dashboard | Order History/Refunds": 1,
