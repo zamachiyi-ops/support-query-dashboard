@@ -1,7 +1,7 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-11-25T10:28:51.030Z",
+  "last_synced": "2026-11-25T20:10:53.243Z",
   "timezone": "Africa/Johannesburg",
   "range": {
     "from": "2026-09-27",
@@ -1149,17 +1149,17 @@
       "Feedback About YUMBI": 0
     },
     "2026-11-25": {
-      "POS": 2,
+      "POS": 4,
       "Dashboard": 0,
-      "Outlet Settings": 1,
-      "Menu": 0,
-      "Orders": 0,
+      "Outlet Settings": 2,
+      "Menu": 3,
+      "Orders": 2,
       "Payswitch Queries": 1,
       "Non-Payswitch Queries": 0,
       "Delivery Provider": 0,
-      "EVouchers": 0,
-      "Printer": 0,
-      "Switchboard": 0,
+      "EVouchers": 1,
+      "Printer": 1,
+      "Switchboard": 1,
       "VoIP": 0,
       "Reports": 0,
       "Accounts": 0,
@@ -1824,10 +1824,17 @@
       "Switchboard | On-Boarding Follow Up": 1
     },
     "2026-11-25": {
+      "EVouchers | Wigroup code": 1,
+      "Menu | Item Query": 2,
+      "Menu | Mappings": 1,
+      "Orders | Order Details Confirmation": 2,
+      "Outlet Settings | Delivery zones settings update": 1,
       "Outlet Settings | Payment methods settings": 1,
       "POS | General": 1,
-      "POS | How to Capture Order": 1,
-      "Payswitch Queries | Dashboard Refund Query": 1
+      "POS | How to Capture Order": 3,
+      "Payswitch Queries | Dashboard Refund Query": 1,
+      "Printer | Printer troubleshooting": 1,
+      "Switchboard | CC Settings Query": 1
     }
   },
   "unmapped_queries": {}
