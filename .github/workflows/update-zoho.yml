@@ -1,0 +1,41 @@
+name: Update Zoho Desk data
+
+on:
+  schedule:
+    - cron: '5 * * * *'   # every hour, a few minutes past the hour
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+
+      - name: Fetch Zoho Desk ticket counts
+        env:
+          ZOHO_REGION: 'com'   # change to eu, in or com.au if your Zoho Desk address uses that ending
+          ZOHO_CLIENT_ID: ${{ secrets.ZOHO_CLIENT_ID }}
+          ZOHO_CLIENT_SECRET: ${{ secrets.ZOHO_CLIENT_SECRET }}
+          ZOHO_REFRESH_TOKEN: ${{ secrets.ZOHO_REFRESH_TOKEN }}
+          ZOHO_ORG_ID: ${{ secrets.ZOHO_ORG_ID }}
+        run: node scripts/fetch-zoho.js
+
+      - name: Save updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/zoho.json
+          git diff --staged --quiet || git commit -m "Update Zoho Desk data"
+          git pull --rebase
+          git push
