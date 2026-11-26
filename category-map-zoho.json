@@ -1,0 +1,22 @@
+{
+  "categories": {
+    "Brand Customer Care": ["Brand Customer Care"],
+    "Delivery Provider": ["Delivery Integration"],
+    "EVouchers": ["eVouchers"],
+    "Accounts": ["Finance Query"],
+    "General": ["General"],
+    "Printer": ["GSM Printer"],
+    "Reports": ["Insights"],
+    "Menu": ["Menus"],
+    "Non-Payswitch Queries": ["None-Payswitch Query"],
+    "OrderUp": ["OrderUp"],
+    "Payswitch Queries": ["Payswitch Query"],
+    "POS": ["POS Integration"],
+    "Outlet Settings": ["Restaurant Updates"],
+    "Sales Query": ["Sales"],
+    "Dashboard": ["Self Service"],
+    "Switchboard": ["Switchboard Query"],
+    "System issue": ["System Issue"]
+  },
+  "excluded": []
+}
