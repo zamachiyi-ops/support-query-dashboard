@@ -1,11 +1,11 @@
 {
   "source": "Call log",
   "measure": "Calls logged on the call disposition form (one call counts once)",
-  "last_synced": "2026-11-27T13:53:40.886Z",
+  "last_synced": "2026-11-27T22:40:28.648Z",
   "timezone": "Africa/Johannesburg",
   "range": {
-    "from": "2026-09-29",
-    "to": "2026-11-27"
+    "from": "2026-09-30",
+    "to": "2026-11-28"
   },
   "categories": [
     "POS",
@@ -27,25 +27,6 @@
     "Feedback About YUMBI"
   ],
   "daily": {
-    "2026-09-29": {
-      "POS": 0,
-      "Dashboard": 5,
-      "Outlet Settings": 0,
-      "Menu": 2,
-      "Orders": 4,
-      "Payswitch Queries": 0,
-      "Non-Payswitch Queries": 0,
-      "Delivery Provider": 0,
-      "EVouchers": 2,
-      "Printer": 3,
-      "Switchboard": 0,
-      "VoIP": 0,
-      "Reports": 0,
-      "Accounts": 0,
-      "Sales Query": 1,
-      "System issue": 0,
-      "Feedback About YUMBI": 0
-    },
     "2026-09-30": {
       "POS": 1,
       "Dashboard": 5,
@@ -1149,14 +1130,14 @@
       "Feedback About YUMBI": 0
     },
     "2026-11-27": {
-      "POS": 2,
+      "POS": 3,
       "Dashboard": 0,
       "Outlet Settings": 4,
-      "Menu": 1,
-      "Orders": 1,
+      "Menu": 3,
+      "Orders": 2,
       "Payswitch Queries": 3,
       "Non-Payswitch Queries": 0,
-      "Delivery Provider": 0,
+      "Delivery Provider": 1,
       "EVouchers": 0,
       "Printer": 4,
       "Switchboard": 0,
@@ -1166,21 +1147,28 @@
       "Sales Query": 3,
       "System issue": 0,
       "Feedback About YUMBI": 0
+    },
+    "2026-11-28": {
+      "POS": 0,
+      "Dashboard": 0,
+      "Outlet Settings": 0,
+      "Menu": 0,
+      "Orders": 0,
+      "Payswitch Queries": 0,
+      "Non-Payswitch Queries": 0,
+      "Delivery Provider": 0,
+      "EVouchers": 0,
+      "Printer": 0,
+      "Switchboard": 0,
+      "VoIP": 0,
+      "Reports": 0,
+      "Accounts": 0,
+      "Sales Query": 0,
+      "System issue": 0,
+      "Feedback About YUMBI": 0
     }
   },
   "subquery_daily": {
-    "2026-09-29": {
-      "Dashboard | Access request": 2,
-      "Dashboard | Delivery Zone Management": 2,
-      "Dashboard | Store Settings": 1,
-      "EVouchers | Redemption query": 1,
-      "EVouchers | Wigroup code": 1,
-      "Menu | Item Query": 2,
-      "Orders | Order Details Confirmation": 4,
-      "Printer | Printer troubleshooting": 1,
-      "Printer | Query on how the printer works": 2,
-      "Sales Query | New lead": 1
-    },
     "2026-09-30": {
       "Dashboard | Access request": 1,
       "Dashboard | Campaign Related Query": 1,
@@ -1834,13 +1822,15 @@
       "Switchboard | On boarding": 1
     },
     "2026-11-27": {
-      "Menu | Item Query": 1,
-      "Orders | Order Details Confirmation": 1,
+      "Delivery Provider | Delivery Tribe": 1,
+      "Menu | Item Query": 2,
+      "Menu | Price issue": 1,
+      "Orders | Order Details Confirmation": 2,
       "Outlet Settings | Address update": 1,
       "Outlet Settings | Contact updates": 1,
       "Outlet Settings | Store ID Query": 1,
       "Outlet Settings | Trading times update": 1,
-      "POS | How to Capture Order": 1,
+      "POS | How to Capture Order": 2,
       "POS | Offline Store": 1,
       "Payswitch Queries | Failed Order Refund Query": 3,
       "Printer | Printer troubleshooting": 2,
