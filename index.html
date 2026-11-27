@@ -44,6 +44,15 @@
     font-size: 14px; font-weight: 700; cursor: pointer;
   }
   .btn-primary:disabled { opacity: .5; cursor: default; }
+  .btn-secondary {
+    height: 50px; padding: 0 24px; border: 1.5px solid #D1D1D1; border-radius: 25px; background: #fff; color: var(--ink);
+    font-size: 14px; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-secondary:hover { border-color: var(--ink); }
+  .btn-secondary:disabled { opacity: .6; cursor: default; }
+  .btn-secondary svg { width: 16px; height: 16px; }
+  .btn-secondary.spinning svg { animation: spin 0.9s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
 
   /* Cards */
   .card { background: #fff; border-radius: 20px; box-shadow: var(--shadow); padding: 20px 24px; }
@@ -141,7 +150,11 @@
       </div>
     </div>
     <div class="top-actions">
-      <span id="sync" class="sync">Loading data</span>
+      <span id="sync" class="sync" aria-live="polite">Loading data</span>
+      <button id="refresh" class="btn-secondary" type="button" title="Load the latest saved data">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 3v6h-6"/></svg>
+        <span id="refresh-label">Refresh</span>
+      </button>
       <button id="export" class="btn-primary" type="button" disabled>Download CSV</button>
     </div>
   </header>
@@ -458,6 +471,13 @@ $('range-pills').querySelectorAll('button').forEach(btn => btn.addEventListener(
 }));
 ['from', 'to'].forEach(id => $(id).addEventListener('change', e => { state[id] = e.target.value; render(); }));
 $('export').addEventListener('click', exportCsv);
+$('refresh').addEventListener('click', async () => {
+  const btn = $('refresh');
+  btn.disabled = true; btn.classList.add('spinning'); $('refresh-label').textContent = 'Refreshing';
+  try { await loadAll(); } finally {
+    btn.disabled = false; btn.classList.remove('spinning'); $('refresh-label').textContent = 'Refresh';
+  }
+});
 
 loadAll();
 setInterval(loadAll, REFRESH_MINUTES * 60000);
