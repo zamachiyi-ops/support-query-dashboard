@@ -2,11 +2,11 @@
   "source": "Zoho Desk",
   "department": "Customer Support",
   "measure": "Tickets created, by ticket classification (one ticket counts once)",
-  "last_synced": "2026-11-26T20:03:21.416Z",
+  "last_synced": "2026-11-27T02:46:19.581Z",
   "timezone": "Africa/Johannesburg",
   "range": {
-    "from": "2026-09-28",
-    "to": "2026-11-26"
+    "from": "2026-09-29",
+    "to": "2026-11-27"
   },
   "categories": [
     "Brand Customer Care",
@@ -35,32 +35,6 @@
     "Reporting"
   ],
   "daily": {
-    "2026-09-28": {
-      "Brand Customer Care": 5,
-      "Delivery Provider": 4,
-      "EVouchers": 0,
-      "Accounts": 0,
-      "General": 21,
-      "Printer": 1,
-      "Reports": 2,
-      "Menu": 0,
-      "Non-Payswitch Queries": 0,
-      "OrderUp": 0,
-      "Payswitch Queries": 0,
-      "POS": 1,
-      "Outlet Settings": 5,
-      "Sales Query": 0,
-      "Dashboard": 16,
-      "Switchboard": 0,
-      "System issue": 0,
-      "Restaurants": 0,
-      "PaySwitch": 0,
-      "Documentation": 0,
-      "Bug Report": 0,
-      "Invoices and Statement Requests": 0,
-      "Other": 0,
-      "Reporting": 0
-    },
     "2026-09-29": {
       "Brand Customer Care": 3,
       "Delivery Provider": 0,
@@ -1594,23 +1568,35 @@
       "Invoices and Statement Requests": 0,
       "Other": 0,
       "Reporting": 0
+    },
+    "2026-11-27": {
+      "Brand Customer Care": 0,
+      "Delivery Provider": 0,
+      "EVouchers": 0,
+      "Accounts": 0,
+      "General": 0,
+      "Printer": 0,
+      "Reports": 0,
+      "Menu": 0,
+      "Non-Payswitch Queries": 0,
+      "OrderUp": 0,
+      "Payswitch Queries": 0,
+      "POS": 0,
+      "Outlet Settings": 0,
+      "Sales Query": 0,
+      "Dashboard": 0,
+      "Switchboard": 0,
+      "System issue": 0,
+      "Restaurants": 0,
+      "PaySwitch": 0,
+      "Documentation": 0,
+      "Bug Report": 0,
+      "Invoices and Statement Requests": 0,
+      "Other": 0,
+      "Reporting": 0
     }
   },
   "subcategory_daily": {
-    "2026-09-28": {
-      "Dashboard | Self Service > Out of Stock": 12,
-      "POS | POS Integration > Aura": 1,
-      "Outlet Settings | Restaurant Updates > Payment Methods": 1,
-      "Outlet Settings | Restaurant Updates > Failed Order Number": 1,
-      "Outlet Settings | Restaurant Updates > Delivery Zone Settings": 1,
-      "Delivery Provider | Delivery Integration > Uber Direct": 1,
-      "Dashboard | Self Service > Delivery Zone Management": 1,
-      "Printer | GSM Printer > Fault": 1,
-      "Delivery Provider | Delivery Integration > Skedadel": 3,
-      "Dashboard | Self Service > Access Request": 2,
-      "Dashboard | Self Service > User Management": 1,
-      "Outlet Settings | Restaurant Updates > Trading Times": 2
-    },
     "2026-09-29": {
       "Printer | GSM Printer > Fault": 2,
       "EVouchers | eVouchers > WiGroup": 1,
@@ -2208,7 +2194,6 @@
     }
   },
   "not_categorised_daily": {
-    "2026-09-28": 9,
     "2026-09-29": 7,
     "2026-09-30": 4,
     "2026-10-01": 4,
