@@ -2,11 +2,11 @@
   "source": "Zoho Desk",
   "department": "Customer Support",
   "measure": "Tickets created, by ticket classification (one ticket counts once)",
-  "last_synced": "2026-11-27T20:57:33.935Z",
+  "last_synced": "2026-11-28T03:11:43.098Z",
   "timezone": "Africa/Johannesburg",
   "range": {
-    "from": "2026-09-29",
-    "to": "2026-11-27"
+    "from": "2026-09-30",
+    "to": "2026-11-28"
   },
   "categories": [
     "Brand Customer Care",
@@ -35,32 +35,6 @@
     "Reporting"
   ],
   "daily": {
-    "2026-09-29": {
-      "Brand Customer Care": 3,
-      "Delivery Provider": 0,
-      "EVouchers": 2,
-      "Accounts": 0,
-      "General": 16,
-      "Printer": 2,
-      "Reports": 1,
-      "Menu": 1,
-      "Non-Payswitch Queries": 0,
-      "OrderUp": 0,
-      "Payswitch Queries": 0,
-      "POS": 0,
-      "Outlet Settings": 1,
-      "Sales Query": 0,
-      "Dashboard": 9,
-      "Switchboard": 0,
-      "System issue": 1,
-      "PaySwitch": 0,
-      "Restaurants": 1,
-      "Documentation": 0,
-      "Bug Report": 0,
-      "Invoices and Statement Requests": 0,
-      "Other": 0,
-      "Reporting": 0
-    },
     "2026-09-30": {
       "Brand Customer Care": 2,
       "Delivery Provider": 1,
@@ -1594,18 +1568,35 @@
       "Invoices and Statement Requests": 0,
       "Other": 0,
       "Reporting": 0
+    },
+    "2026-11-28": {
+      "Brand Customer Care": 0,
+      "Delivery Provider": 0,
+      "EVouchers": 0,
+      "Accounts": 0,
+      "General": 0,
+      "Printer": 0,
+      "Reports": 0,
+      "Menu": 0,
+      "Non-Payswitch Queries": 0,
+      "OrderUp": 0,
+      "Payswitch Queries": 0,
+      "POS": 0,
+      "Outlet Settings": 0,
+      "Sales Query": 0,
+      "Dashboard": 0,
+      "Switchboard": 0,
+      "System issue": 0,
+      "PaySwitch": 0,
+      "Restaurants": 0,
+      "Documentation": 0,
+      "Bug Report": 0,
+      "Invoices and Statement Requests": 0,
+      "Other": 0,
+      "Reporting": 0
     }
   },
   "subcategory_daily": {
-    "2026-09-29": {
-      "Printer | GSM Printer > Fault": 2,
-      "EVouchers | eVouchers > WiGroup": 1,
-      "Outlet Settings | Restaurant Updates > Custom Delivery Zones": 1,
-      "Dashboard | Self Service > Out of Stock": 7,
-      "Dashboard | Self Service > Access Request": 2,
-      "EVouchers | eVouchers > YUMBI": 1,
-      "Restaurants | Restaurants > Configurations": 1
-    },
     "2026-09-30": {
       "Outlet Settings | Restaurant Updates > Custom Delivery Zones": 5,
       "Printer | GSM Printer > RAM Collection": 2,
@@ -2210,7 +2201,6 @@
     }
   },
   "not_categorised_daily": {
-    "2026-09-29": 7,
     "2026-09-30": 4,
     "2026-10-01": 4,
     "2026-10-02": 4,
@@ -2269,6 +2259,7 @@
     "2026-11-24": 17,
     "2026-11-25": 10,
     "2026-11-26": 12,
-    "2026-11-27": 19
+    "2026-11-27": 22,
+    "2026-11-28": 4
   }
 }
