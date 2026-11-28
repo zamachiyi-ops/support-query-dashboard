@@ -1,11 +1,11 @@
 {
   "source": "LiveChat",
   "measure": "Tag uses (one chat can have more than one tag)",
-  "last_synced": "2026-11-27T18:37:12.785Z",
+  "last_synced": "2026-11-28T01:44:36.467Z",
   "timezone": "Africa/Johannesburg",
   "range": {
-    "from": "2026-09-29",
-    "to": "2026-11-27"
+    "from": "2026-09-30",
+    "to": "2026-11-28"
   },
   "categories": [
     "Order tracking & updates",
@@ -20,18 +20,6 @@
     "Store/merchant queries"
   ],
   "daily": {
-    "2026-09-29": {
-      "Order tracking & updates": 258,
-      "Complaints": 50,
-      "Refunds & payments": 59,
-      "Vouchers & promo codes": 8,
-      "How to order": 11,
-      "Account & login": 5,
-      "General & feedback": 3,
-      "Delivery address": 2,
-      "Store & menu info": 0,
-      "Store/merchant queries": 0
-    },
     "2026-09-30": {
       "Order tracking & updates": 628,
       "Complaints": 108,
@@ -729,16 +717,28 @@
       "Store/merchant queries": 0
     },
     "2026-11-27": {
-      "Order tracking & updates": 355,
-      "Complaints": 60,
-      "Refunds & payments": 66,
+      "Order tracking & updates": 505,
+      "Complaints": 99,
+      "Refunds & payments": 97,
       "Vouchers & promo codes": 18,
       "How to order": 7,
-      "Account & login": 7,
-      "General & feedback": 3,
+      "Account & login": 8,
+      "General & feedback": 4,
       "Delivery address": 6,
       "Store & menu info": 10,
       "Store/merchant queries": 1
+    },
+    "2026-11-28": {
+      "Order tracking & updates": 0,
+      "Complaints": 0,
+      "Refunds & payments": 1,
+      "Vouchers & promo codes": 0,
+      "How to order": 0,
+      "Account & login": 0,
+      "General & feedback": 0,
+      "Delivery address": 0,
+      "Store & menu info": 0,
+      "Store/merchant queries": 0
     }
   },
   "unmapped_tags": {}
